@@ -90,4 +90,61 @@ elde ederiz
 
 // let g = (0.1 + 0.2);
 // console.log(g)
-// console.log(+g.toFixed(2));
+// console.log(+g.toFixed(2));  // tofixed yaparsak string yapar
+
+// let h = 1_000_000_000;  // bu alt çizgiler sadece yazmak için kolaylıklar sağlar. ama yine aynı şekilde çıkar.
+// console.log(h);
+
+
+// STRİNGLER = metinler
+
+// let i = 'This is a string';
+// let j = "This is a string";
+// let k = `This is a string`;
+
+// console.log(i);
+// console.log(j);
+// console.log(k);
+
+// let userName = 'Burhan';
+// console.log(userName.length);
+
+// console.log("Merhaba ", userName);
+// console.log(`Merhaba ${userName}`);
+// console.log(`2 +3 = ${2+3}`);
+// console.log(`2 +3 = ${'2'+'3'}`);
+
+// BOOLEAN DATA TYPE ;
+
+// let m = ``;
+// let n = ` `;
+// let P = 0;
+
+// console.log(Boolean(m))
+// console.log(Boolean(n))
+// console.log(Boolean(P))
+// console.log(Boolean(3>4))
+
+// OBJECT -->> REferans tipli veri tipidir.birden fazla veri tipini alabilirler.
+
+const myCar = {
+    make : 'ford',
+    model : "Mustang",
+    year : 1965,
+    color : 'Black'
+}
+
+console.log(myCar);
+
+myCar.color = "green"  // atama yapmıyoruz. içindeki nesnenin değerini değiştiriyoruz.
+console.log(myCar);
+myCar.sunRoof = "false";
+console.log(myCar);
+
+myCar.age = function(current){
+    console.log(current - this.year)
+}
+
+console.log(myCar);
+
+myCar.age(2022);
