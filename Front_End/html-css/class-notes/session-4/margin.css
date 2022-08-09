@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 2px solid red; */
+    margin: 40px;
+    background-color: bisque;
+    /* padding: 5px; */
+    border: 2px solid red;
+    
+}
+
+h1{
+    background-color: aquamarine;
+    /* margin-bottom: 0; */
+    padding: 20px 40px;
+    margin-top: 100px;
+}
+
+#par1{
+    box-sizing: border-box;
+    border: 5px solid blue;
+    background-color: coral;
+    /* margin-top: 0; */
+    width: 250px;
+    height: 150px;
+    margin: 50px auto; 
+    padding: 10px ; 
+    overflow: scroll;
+}
+
+#par2{
+    box-sizing: border-box;
+    background-color: rgba(100, 148, 237, 0.544);
+    /* margin: inherit; */
+    /* margin-top: -80px; */
+    padding-left: 20px;
+    padding: 20px;
+    
+
+}

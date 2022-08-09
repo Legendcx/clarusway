@@ -1,0 +1,55 @@
+
+h2{
+    text-align: center;
+    color: darkmagenta;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: 'Audiowide', cursive;
+}
+#part1{
+
+color: blue;
+text-align: center;
+text-transform: capitalize;
+
+}
+
+#part2{
+
+    color: rgb(0,255,0);
+    text-align: right;
+    direction: rtl; 
+    unicode-bidi: bidi-override;
+}
+
+#part3{
+
+    color: #25ff45;
+    text-indent: 20px;
+    text-align: justify;
+    text-decoration: line-through dashed rebeccapurple 2px;
+    
+}
+
+#part4{
+
+    color:hsl(0, 100%, 50%);
+    text-decoration: underline;
+    letter-spacing: 5px;
+    line-height: 20px;
+    text-shadow: 1px 1px 1px red;
+    -webkit-column-count: 3;
+    -moz-column-rule: 3px solid blueviolet;
+}
+
+#part5::first-line{
+
+    color: crimson;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: overline wavy blue;
+}
+#span{
+    text-decoration: double;
+}
