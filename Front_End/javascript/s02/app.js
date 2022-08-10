@@ -1,10 +1,12 @@
 console.log("App js running");
 
-// var a = 5;
+// const a = 5;
 // console.log(a);
+// var olursa ortadakinden sonra alttaki aynı olur
+// let ve const ta ise ortadaki değer tek olur yine başa döner olay
 
 // {
-//     var a =3;
+//     const a =3;
 //     console.log(a);
 // }
 
@@ -127,24 +129,24 @@ elde ederiz
 
 // OBJECT -->> REferans tipli veri tipidir.birden fazla veri tipini alabilirler.
 
-const myCar = {
-    make : 'ford',
-    model : "Mustang",
-    year : 1965,
-    color : 'Black'
-}
+// const myCar = {
+//     make : 'ford',
+//     model : "Mustang",
+//     year : 1965,
+//     color : 'Black'
+// }
 
-console.log(myCar);
+// console.log(myCar);
 
-myCar.color = "green"  // atama yapmıyoruz. içindeki nesnenin değerini değiştiriyoruz.
-console.log(myCar);
-myCar.sunRoof = "false";
-console.log(myCar);
+// myCar.color = "green"  // atama yapmıyoruz. içindeki nesnenin değerini değiştiriyoruz.
+// console.log(myCar);
+// myCar.sunRoof = "false";
+// console.log(myCar);
 
-myCar.age = function(current){
-    console.log(current - this.year)
-}
+// myCar.age = function(current){
+//     console.log(current - this.year)
+// }
 
-console.log(myCar);
+// console.log(myCar);
 
-myCar.age(2022);
+// myCar.age(2022);
