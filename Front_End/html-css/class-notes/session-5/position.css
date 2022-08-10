@@ -4,22 +4,79 @@
     height: 1000px;
     margin: 30px;
     padding: 5px;
+    position: relative;
 }
 
 .box1{
-    width: 100px;
+    width: 100%;
+    /* border-radius: 20px; */
+    /* margin: auto; */
     height: 100px;
     background-color: fuchsia;
+    /* position: fixed; */
+    position: relative;
+    top:0%;
+    right: 0px;
+    z-index: 1;
+
+
 }
 
 .box2{
     width: 100px;
     height: 100px;
-    background-color: blue;
+    background-color:gold;
+    position: relative;
+    bottom: 20px;
+    /* top: 20px;
+    left: 20px; */
+    z-index: 2;
+
 }
 
 .box3{
     width: 100px;
     height: 100px;
     background-color:chartreuse;
+    /* position: absolute; */
+    top: 20px;
+    left: 80px;
+    /* position: sticky; */
+    position: relative;
+    left: 0px;
+    top: 65px;
+
 }
+
+.icerde{
+    width: 30px;
+    height: 30px;
+    background-color: coral;
+    font-size: .5rem;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    /* ! etrafındaki kutunun position u relative değilse body e göre konumlanır.  */
+}
+
+#paragraf{
+    position: fixed;
+    background-color: hotpink;
+    top: 30px;
+    z-index: 10;
+}
+
+/* ? Position kullanıyorsak top, left, bottom, right gibi attibute kullanmalıyız.*/
+/* ! position: relative; 
+! left:20px; - bottom:20px; 
+! orjinal pozisyondan verilen oranda uzaklaşır.*/
+/* referans olarak önceki konumunu alır.*/
+
+
+/* ? position:absolute === onu kapsayan bir div varsa ::: öncelikle onun position unu relative yapmamız gerekir. daha sonra mevcet div in kini de absolute yaparsak  onun parent ını alır.  */
+
+/* ! fixed = görüntüyü sabitliyor. */
+
+/* sticky == ise görüntüyü bulunduğu div in içinde sabitler. daha aşağı inerse yine hareket edebilr.*/
+
+/* ? z-index == eğer position kullanırsak bu özelliği kullanabiliriz. katmandaki yerini belirtiriz. eksi değer alabilir. kimin z-index i büyükse o yukarıda olur.*/

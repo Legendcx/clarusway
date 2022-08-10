@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List-Style</title>
+    <style>
+        ul{
+            /* padding-left: 5px; */
+            list-style-type: none;
+        }
+.item{
+    /* list-style-type: georgian;*/
+    /* list-style-position:outside;
+    list-style-type: "❄"; */
+    list-style-image: url(./locaiton.png);
+} 
+
+li::before{
+    /* content: "\2764";
+    color: chocolate;
+    padding-right: 7px; */
+}
+ol{
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+ol li{
+    border: 1px solid red;
+    border-radius: 25px;
+    margin: 10px;
+    padding-left: 1rem;
+    background-color: aqua;
+    border-left: 7px solid burlywood;
+    width: 250px;
+}
+
+ol li:hover{
+    background-color: coral;
+    color: crimson;
+    cursor:pointer;
+}
+
+ol li::before{
+    content: "🌌"
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="item item1">item1</li>
+        <li class="item item2">item2</li>
+        <li class="item item3">item3</li>
+        <li class="item item4">item4</li>
+        <li class="item item5">item5</li>
+       
+    </ul>
+
+    <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        
+    </ol>
+</body>
+</html>
+
+<!-- ! list-style-type: circle / square / none / katakona / elps / gibi attribute leri vardır.-->
+
+<!-- ? list-style-type : upper-roman / lower-alpha gibi attribute leri vardır.-->
+
+<!-- list-style-image: url(url adresini yazacağız.)-->
