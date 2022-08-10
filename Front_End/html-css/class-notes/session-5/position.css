@@ -1,0 +1,25 @@
+.main{
+    width: 100%;
+    background-color: aquamarine;
+    height: 1000px;
+    margin: 30px;
+    padding: 5px;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: fuchsia;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color:chartreuse;
+}
