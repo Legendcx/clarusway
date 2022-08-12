@@ -21,6 +21,12 @@
 // console.log(undefined == undefined);  // true
 // console.log(undefined === undefined);  // true
 
+// ! virgül işleci de bir atama operatorüdür. 
+// ! en son yazılan değeri return eder
+// ? örnek 
+// let kel = (1,2,3);
+// console.log(kel);
+
 
 // ! LOGİCAL OPERATORS
 
@@ -38,6 +44,10 @@
 // let count2 = 0;
 // let result2 = count2 ?? 1;
 // console.log(result2); // result = 0
+
+// let bur = 5;
+// let bur2 = bur ?? 1;
+// console.log(bur2);
 
  // ! 1. SORU
 
@@ -122,8 +132,16 @@
 
 /*
 * 1. Write a JavaScript code to calculate multiplication and division of two numbers (input from user). : 5min
+
 ​
 */
+// ? again solution anwers
+// let a, b;
+// a = 3;
+// b = 2;
+
+// console.log(`${a} x ${b} = ${a * b} \n${a} / ${b} = ${a / b}`);
+
 
 // let num1 = +prompt('Enter first number');
 // let num2 = +prompt('Enter second number');
@@ -133,12 +151,30 @@
  * 2. area calculation: 7min
  * area of any triangle (given only sides) ---
 ​
- * area of rectangle (given only sides)
+ * area of rectangle (given o1nly sides)
  * area of circle (given only radius)
  * perimeter of circle (given only radius)
  *
  * pi sayisi olarak :  Math.PI / 3.141592653589793
+ * 
+
  */
+
+// ! Burhan tekrar yapıyor soruları... Aferin ona
+/* 
+let ken1 = +prompt("Üçgenin first kenarının length inin giriniz :");
+ let ken2 = +prompt("Üçgenin second kenarının length inin giriniz :");
+ let ken3 = +prompt("Üçgenin third kenarının length inin giriniz :");
+
+ let cevre = (ken1 + ken2 + ken3) / 2;
+ console.log(cevre);
+ let area = Math.sqrt(cevre * ((cevre - ken1) * (cevre - ken2) * (cevre - ken3)));
+ console.log(`Area og triangle is ${area.toFixed(2)}, perimeter is ${cevre}`);
+*/
+
+
+
+
 
 // let side1 = +prompt('Enter first side');
 // let side2 = +prompt('Enter second side');
@@ -157,6 +193,11 @@
 ​
 */
 
+// ! Burhan yine bir örnekle geldi yanınıza. çalışın arkadaşlar. çalışanlar mutlaka kazanacaklardır.
+// let cTemp = +prompt('Enter celcius temperatur');
+// let toFarnen = (cTemp * 9) / 5 +32;
+// console.log(`${cTemp} ℃ equal ${toFarnen.toFixed(2)} ℉ tır.`)
+// ----------------------------------------------------------
 // let cTemp = +prompt('Enter celcius temperature');
 // const cToFahr = (cTemp * 9) / 5 + 32;
 // console.log(`${cTemp}°C equals ${cToFahr.toFixed(2)}°F`);
@@ -170,7 +211,20 @@
  * day of month is 11
  * month of year is 8
  * year is 2022
+
  */
+// ! Burhan örnek çalışma ve tekrarı etmek için yapılmış bir çalışmadır.
+// let today = new Date();
+// console.log(today);
+
+// console.log(today.getDate());
+// console.log(today.getDay() + 1);
+// console.log(today.getFullYear());
+// console.log(today.getHours());
+// console.log(today.getMinutes());
+// console.log(today.getTime());
+// console.log(today.getTimezoneOffset());
+
 // const today = new Date();
 // console.log(today);
 
@@ -196,11 +250,18 @@ stage is yours
 There are at least 2 numbers having same first digit: true/false
 ​
 */
+// todo Benim yaptığım bir örnektir. Tekrar ettim
+// let a = Number(prompt("Enter first number"));
+// let b = Number(prompt("Enter second number"));
+// let c = Number(prompt("Enter third number"));
+// let result = a % 10 === b % 10 || a % 10 === c % 10 || b % 10 === c % 10 ;
 
-let p = +prompt('Enter first number');
-let q = +prompt('Enter second number');
-let r = +prompt('Enter third number');
+// console.log(`there are at least 2 number having same first digit : ${result}`);
 
-const result = p % 10 === q % 10 || p % 10 === r % 10 || q % 10 === r % 10;
+// let p = +prompt('Enter first number');
+// let q = +prompt('Enter second number');
+// let r = +prompt('Enter third number');
 
-console.log(`There are at least 2 numbers having same first digit: ${result}`);
+// const result = p % 10 === q % 10 || p % 10 === r % 10 || q % 10 === r % 10;
+
+// console.log(`There are at least 2 numbers having same first digit: ${result}`);
