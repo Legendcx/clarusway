@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 100%;
+}
+
+.header{
+    /* text-align: center; */
+    align-items: center;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_store {
+    display: flex;
+    /* flex-direction: row; */
+    /* margin-left: 10px; */
+    /* margin: 5px; */
+    justify-content:space-between;
+    /* text-decoration: none; */
+
+}
+
+.about_store a{
+    display: flex;
+    margin: 0px auto;
+    margin-left: 15px;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.623);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+    align-items: center;
+
+}
+
+.header .about_store a:hover{
+    text-decoration: underline;
+   color: black;
+}
+
+.mail_img {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* margin-right: 15px; */
+    justify-content:space-between;
+    align-items: center;
+    
+  
+} 
+
+.mail_img a {
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    margin-right: 15px;
+    padding: 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.623);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.mail_img a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.mail_img .logo_ust a img {
+    width: 25px;
+    height: 25x;
+    opacity: 0.5;
+}
+
+#sign_in {
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    height: 30px;
+    width: 70px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-right: 7px;
+
+}
+
+#sign_in:hover{
+    cursor: pointer;
+    background-color:rgb(99, 152, 231) ;
+}
+
+.google_img {
+    display: block;
+    height: 100px;
+    width: 285px;
+    margin: 205px auto 0px auto;
+
+}
+
+.main {
+    text-align: center;
+    padding-top: 20px;
+    /* margin-left: 60px; */
+    /* margin-left: 60px; */
+
+}
+
+
+#search {
+    font-size: 16px;
+    height: 40px;
+    width: 480px;
+    border-radius: 23px;
+    padding: 3px;
+    border: 1px solid lightgray;
+    padding-left: 50px;
+    
+}
+
+#arama {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 7px;
+    right: 465px;
+}
+
+#microfone {
+    position: relative;
+    top: 5px;
+    right: 58px;
+    height: 20px;
+    /* width: 23px; */
+}
+
+#search:hover{
+    box-shadow: 2px 2px 2px lightgray;
+    border-color: lightgray;
+}
+
+#search:focus{
+    outline: 0;
+}
+
+.button_br {
+    text-align: center;
+    padding-top: 35px;
+    font-size: 18px;
+    /* display: inline-block; */
+    
+
+}
+
+div button {
+    height: 40px;
+    width: 150px;
+    /* border:hidden; */
+    border-radius: 5px;
+    color: #5f6368;
+    margin-right: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.425);
+    font-size: 17px;
+    background-color: rgba(128, 128, 128, 0.623);
+   
+    
+    
+    
+}
+
+ div button:hover {
+    color: black;
+    border: 1px double lightgray;
+    box-shadow: 0.7px 0.7px 0.7px lightgrey ;
+    cursor: pointer;
+}
+
+/* #buton2{
+    height: 40px;
+    width: 140px;
+    border: hidden;
+    border-radius: 5px;
+    color: #5f6368;
+   
+}
+
+#buton2:hover {
+    color: black;
+    border: 1px double lightgrey;
+    box-shadow: 0.6px 0.6px 0.6px lightgrey ;
+    cursor: pointer;
+} */
+
+main .pa_pa {
+    /* width: 100%; */
+    display: inline-flex; 
+    text-align: center;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 25px;
+    /* justify-items: center; */
+    
+    
+
+}
+
+main .pa_pa a {
+    /* display: flex; */
+    color: rgba(14, 14, 233, 0.534);
+}
+
+main .pa_pa a:hover {
+    /* text-decoration: underline; */
+    cursor: pointer;
+    color: blue;
+}
+
+footer {
+    width: 100%;
+    padding-left: 7px;
+    background-color: #f2f2f2;
+    line-height: 35px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tr {
+    border-bottom: 3px solid #e4e4e4;
+    margin-left: 10px;
+    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, 0.589);
+}
+
+.left_footer {
+    color: #5f6368;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 7px;
+    background-color: #f2f2f2;
+}
+
+
+
+.l_footer {
+    float: left;
+    background-color: #f2f2f2;
+    
+}
+
+.r_footer {
+    float: right;
+    margin-right: 23px;
+    background-color: #f2f2f2;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
