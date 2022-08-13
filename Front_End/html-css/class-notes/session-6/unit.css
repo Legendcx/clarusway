@@ -1,0 +1,56 @@
+body{
+    background-color: chartreuse;
+    height: 100vw;
+}
+
+html{
+    font-size: 10px;
+}
+
+.abs{
+    background-color: aqua;
+    width: 5cm;
+}
+
+.div2{
+    background-color: chocolate;
+    width: 50%;
+    height: 50%;
+}
+
+.div3{
+    background-color: blue;
+    width: 50%;
+    height: 50vh:  /* ! bunun parentine yükseklik vermediği için yükseklik yapamayız*/
+}
+
+.div4{
+    background-color: aqua;
+    width: 50vw;
+}
+
+.div5{
+    font-size: 1em;
+}
+
+.div6{
+    font-size: 2em;
+}
+/* ! em de her artışta bir üstekinin verilen çarpımını alır tabi iç içelerde  birinci ile 3. nün aynı olmaısiçin 3. ye 0.5em veririz. 1em = 16px */
+.div7{
+    font-size: 3em;  
+}
+
+
+
+.div8{
+    font-size: 1rem;
+}
+/* ? rem değeri de 16px dir. bunları html nin içinde değiştirebiliriz. html etiketine font-size:10px dersek. artık bundan sonra 1rem:10px olur */
+.div9{
+    font-size: 2rem;
+}
+
+.div10{
+    font-size: 3em;
+}
