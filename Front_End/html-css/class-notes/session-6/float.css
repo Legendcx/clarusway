@@ -1,0 +1,38 @@
+
+.img-float{
+    width: 40%;
+    /* float: right; */
+    float: left;
+    margin: 10px;
+   
+}
+
+.part1{
+    text-align: justify;
+    background-color: blueviolet;
+}
+/*  ! clear yapacağımız elementin blok olması gerekiyor. bir öncekine float ugularsak onu iptal etmek için iki blok elementin arasına bir div açacağız ve ona clear ismini vere biliriz. daha sonra css kısmında ona clear uygulayalım*/
+.clear{
+    clear: both;
+}
+
+.box{
+float: left;
+font-size: 2rem;
+}
+
+.box1{
+background-color:chartreuse;
+width: 33.33%;
+}
+/* ! 100% olunca float alta geçmez ama oran düşerse akış hemen bozulabilir. o yüzde hemen clear kullanmalıyız. */
+.box2{
+background-color: brown;
+   width: 20%;
+}
+
+.box3{
+
+    background-color:aquamarine;
+    width: 33.33%;
+}

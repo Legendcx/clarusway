@@ -1,0 +1,51 @@
+*{
+    border: 3px solid black;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header {
+    background-color: red;
+    margin-top: 10px;
+}
+
+main{
+    background-color: blue;
+    padding: 5px;
+    /* height: 350px; */
+    /* overflow: auto; */
+    border: none;
+}
+
+aside{
+    background-color: blueviolet;
+    width: 25%;
+    height: 300px;
+    float: left;
+    margin-left: 10px;
+}
+
+article{
+    background-color: chartreuse;
+    width: 70%;
+    height: 300px;
+    float: left;
+    /* display: flex;
+    justify-content:;
+    text-align: center; */
+}
+
+footer{
+    background-color: crimson;
+}
+
+.cearl{
+    clear: both;
+    border: none;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}

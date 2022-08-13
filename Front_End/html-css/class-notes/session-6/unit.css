@@ -4,7 +4,7 @@ body{
 }
 
 html{
-    font-size: 10px;
+    font-size: 10px; /* bundan sonra 1rem.em = 10px olur. burası kök olduğu için*/
 }
 
 .abs{
@@ -54,3 +54,5 @@ html{
 .div10{
     font-size: 3em;
 }
+
+/* todo vmax veya vmin vardır. hangisi uygunsa ona  göre değer alır. */

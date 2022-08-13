@@ -1,0 +1,29 @@
+.box{
+    border: 5px solid black;
+    margin-bottom: 4rem;
+    width: 15rem;
+    height: 4rem;
+}
+
+.box1{
+
+     overflow: visible;
+}
+
+.box2{
+    overflow: hidden;
+}
+
+.box3{
+    overflow: scroll;
+}
+
+.box4{
+overflow:auto;
+}
+
+.box5{
+overflow: auto;
+}
+
+

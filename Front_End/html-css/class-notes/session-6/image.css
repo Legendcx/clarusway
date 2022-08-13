@@ -1,0 +1,19 @@
+.container{
+    border: 2px solid red;
+    width: 20rem;
+    height: 20rem;
+    background-image: url(./resim-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+    background-size: cover;
+    overflow: auto;
+    color: yellow;
+    opacity: 0.5;
+
+
+}
+
+#paragraf{
+    color: red;
+}
