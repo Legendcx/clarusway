@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Sorts+Mill+Goudy:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/background_image\ \(2\).jpg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /*bu özellik öndekini sallıyor, alttaki sabit kalıyor.*/
+    height: 100vh;
+}
+
+#container{
+    max-width: 1240px;
+    /* height: 1036px; */
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: auto;
+    margin-top: 30px;
+}
+
+#title{
+    font-size: 4.1rem;
+    color: white;
+    font-family: 'Bowlby One SC', cursive;
+    
+}
+
+span{
+    color: #ff0000;
+    font-family: 'Audiowide', cursive;
+}
+
+#description{
+    font-family: 'Sorts Mill Goudy', serif;
+    color: white;
+}
+
+#header{
+    text-align: center;
+}
+
+textarea{
+    resize: none;
+}
+
+#survey-form-container{
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    padding: 30px 40px;
+}
+
+#name, #age, #email, #dropdown, #feedback{
+    width: 100%;
+    padding: 12px 10px;
+    margin-top: 10px;
+}
+
+.input-box{
+    margin-top: 10px;
+}
+
+#form-button{
+    width: 160px;
+    height: 45px;
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.form-submit{
+    width: 160px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#form-button:hover{
+    background-color: white;
+    color: #ff0000;
+}
+
+/* @font-face {
+    font-family: burhan;
+    src: url(./nereise orayı yazıyoruz);
+} */
+
+#checkbox, #radio{
+    margin-top: 40px;
+}
