@@ -1,16 +1,16 @@
 *{
-    border: 3px solid black;
+    border: 2px solid black;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
-header {
-    background-color: red;
+header{
+    background-color: seagreen;
     margin-top: 10px;
 }
 
 main{
-    background-color: blue;
+    background-color: skyblue;
     padding: 5px;
     /* height: 350px; */
     /* overflow: auto; */
@@ -18,31 +18,32 @@ main{
 }
 
 aside{
-    background-color: blueviolet;
+    background-color: darkorange;
     width: 25%;
     height: 300px;
     float: left;
     margin-left: 10px;
+
 }
 
 article{
-    background-color: chartreuse;
+    background-color: greenyellow;
     width: 70%;
     height: 300px;
     float: left;
-    /* display: flex;
-    justify-content:;
-    text-align: center; */
+
 }
+
 
 footer{
-    background-color: crimson;
+    background-color: coral;
+    /* height: 10px; */
 }
 
-.cearl{
+/* .clear{
     clear: both;
     border: none;
-}
+} */
 
 .clearfix::after{
     content: '';

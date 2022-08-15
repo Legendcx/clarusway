@@ -1,29 +1,28 @@
 .box{
     border: 5px solid black;
     margin-bottom: 4rem;
-    width: 15rem;
+    width: 20rem;
     height: 4rem;
+    background-color: bisque;
 }
 
 .box1{
 
-     overflow: visible;
+    overflow: visible;
 }
-
 .box2{
     overflow: hidden;
 }
-
 .box3{
     overflow: scroll;
 }
-
 .box4{
-overflow:auto;
+    overflow: auto;
 }
-
 .box5{
-overflow: auto;
+    overflow-y: scroll;
 }
 
-
+.paragraf{
+    width: 50rem;
+}
