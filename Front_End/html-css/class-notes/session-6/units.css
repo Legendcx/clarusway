@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+
+html{
+    font-size: 5px; /* 1rem = 10px */
+}
+
+body{
+    height: 100vh;
+    /* background-color: rgb(129, 87, 37); */
+    /* border: 2px solid red; */
+}
+.abs{
+    background-color: aqua;
+    width: 5cm;
+}
+
+.div2{
+    background-color: chocolate;
+    width: 50%;
+    height: 50%;
+}
+
+.div3{
+    background-color: yellow;
+    width: 50rem;
+    height: 20vh;
+}
+
+.div4{
+    background-color: magenta;
+    width: 50vw;
+}
+.div5{
+    font-size: 50px; /*16 px*/
+}
+.div6{
+    font-size: 2em;  /*32 px*/
+}
+.div7{
+    font-size: 0.5em;  /*96 px */
+}
+.div8{
+    font-size: 1rem
+}
+.div9{
+    font-size: 2rem
+}
+.div10{
+    font-size: 3rem
+}
+
