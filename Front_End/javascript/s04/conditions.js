@@ -114,23 +114,22 @@ console.log("****** CONDITIONS *******");
 
 //  console.log(notum >= 50 ? "Geçti : "Kaldı");
 
-//? ODEV1: Dort Islem Hesap Makinasi
+//? ODEV-1: Dort Islem Hesap Makinesi
+//todo    CEVAP-1:
 
-//todo CEVAP-1:
+//   let num1 = +prompt("Enter first number");
+//   let num2 = +prompt("Enter second number");
+//   let oparations = prompt("Choose one of the math operations(+,-,*,/)");
 
-// let num1 = +prompt("Enter first number");
-// let num2 = +prompt("Enter second number");
-// let oparations = prompt("Choose one of the math operations(+,-,*,/)");
-
-// if (oparations === "+") {
+//   if (oparations === "+") {
 //     console.log(`${num1} + ${num2} = ${num1 + num2}`);
-// } else if (oparations === "-") {
-//     console.log(`${num1} - ${num2} = ${num1 - num2}`);
-// }else if (oparations === "*") {
-//     console.log(`${num1} * ${num2} = ${num1 * num2}`);
-// }else {
-//     console.log(`${num1} / ${num2} = ${(num1 / num2).toFixed(2)}`);
-// }
+//   } else if (oparations === "-") {
+//       console.log(`${num1} - ${num2} = ${num1 - num2}`);
+//   }else if (oparations === "*") {
+//       console.log(`${num1} * ${num2} = ${num1 * num2}`);
+//   }else {
+//       console.log(`${num1} / ${num2} = ${(num1 / num2).toFixed(2)}`);
+//   }
 
 // let num1 = +prompt("Enter first number");
 // let num2 = +prompt("Enter second number");
@@ -159,18 +158,31 @@ console.log("****** CONDITIONS *******");
 //todo CEVAP-2:
 
 // let days = prompt("Enter a day of week").toLowerCase();
+//  switch (days) {
+//      case "pazartesi": console.log("InClass"); break;
+//      case "salı": console.log("InClass"); break;
+//      case "çarşamba": console.log("InClass"); break;
+//      case "perşembe": console.log("InClass"); break;
+//      case "cuma": console.log("Teamwork"); break;
+//      case "cumartesi": console.log("In-class + Workshop"); break;
+//      case "pazar": console.log("Self-Study"); break;
+//      default: console.log("Yanlış gün girildi.");break;
+//  }
 
-// switch (days) {
-//     case "pazartesi": console.log("InClass"); break;
-//     case "salı": console.log("InClass"); break;
-//     case "çarşamba": console.log("InClass"); break;
-//     case "perşembe": console.log("InClass"); break;
-//     case "cuma": console.log("Teamwork"); break;
-//     case "cumartesi": console.log("In-class + Workshop"); break;
-//     case "pazar": console.log("Self-Study"); break;
-//     default: console.log("Yanlış gün girildi.");break;
-// }
+//todo 2. yapılılş şekli 
 
+// let days = prompt("Enter a day of week").toLowerCase();
+//   switch (days) {
+//       case "pazartesi": 
+//       case "salı": 
+//       case "çarşamba": 
+//       case "perşembe": 
+//       console.log("InClass"); break;
+//       case "cuma": console.log("Teamwork"); break;
+//       case "cumartesi": console.log("InClass + Workshop"); break;
+//       case "pazar": console.log("Self-Study"); break;
+//       default: console.log("Yanlış gün girildi.");break;
+//   }
 
 //? ÖDEV-3 :  
 //? Maasi asgari ucretten az olanlara %50 zam,
@@ -299,3 +311,5 @@ console.log("****** CONDITIONS *******");
 // const gider = +prompt('Aylık Giderinizi Giriniz');
 // let aUcret = 6471;
 // console.log((gelir >= gider + aUcret) ? 'Kredi verilebilir' : 'Kredi verilemez')
+
+
