@@ -187,18 +187,18 @@ console.log("****** CONDITIONS *******");
 
 
 //? ÖDEV-4 : 
-//? Console’dan kişinin gelir ve gider miktarını alan bir kd yazıyoruz.
+//? Console’dan kişinin gelir ve gider miktarını alan bir kod yazıyoruz.
 //? eğer kişinin geliri giderinden en az asgari ücret kadar fazla ise Kredi Verilebilir. aksi halde kredi alamaz. 
 
 //todo CEVAP-4:
 
- let income = +prompt("Enter your income");
- let expense = +prompt("enter your expense");
- let remaining = income - expense;
- let minSalary = 5500;
+//  let income = +prompt("Enter your income");
+//  let expense = +prompt("enter your expense");
+//  let remaining = income - expense;
+//  let minSalary = 5500;
 
-let situation = remaining >= minSalary ? "You can get a loan" : "You can't get a loan";
-console.log(situation);
+// let situation = remaining >= minSalary ? "You can get a loan" : "You can't get a loan";
+// console.log(situation);
 
 
 
