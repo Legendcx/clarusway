@@ -66,7 +66,7 @@ console.log("****** CONDITIONS *******");
 //? case ler eşitlik durumunu yazabiliriz.
 
 
-// switch(koşul geğişken){
+// switch(koşul değişken){
 //     case değeri1;ifade1; break;
 //     case değeri2; ifade 2;break;
 
@@ -107,15 +107,36 @@ console.log("****** CONDITIONS *******");
 
  //? ÖRNEK5 : Kalan - Geçti
 
- const notum = +prompt("Notunuzu giriniz:");
+//  const notum = +prompt("Notunuzu giriniz:");
 
 //  let sonuc = notum >= 50 ? "Geçti" : "Kaldı";
 // console.log(sonuc);
 
- console.log(notum >= 50 ? "Geçti : "Kaldı");
+//  console.log(notum >= 50 ? "Geçti : "Kaldı");
 
-//? ÖDEV3 :  Maaşı asgariücrreten düşükse %50 zam alsın, büyükse %10 zam yapmak istiyoruz. maaşı alacağız ve zam yaptıracağız ternary ile 
+//? ÖDEV-3 :  Maaşı asgariücrreten düşükse %50 zam alsın, büyükse %10 zam yapmak istiyoruz. maaşı alacağız ve zam yaptıracağız ternary ile 
 //! let maas = 5000;
 //! maas = maaş * 1.5;
 
-//? ÖDEV4 : Gelir - Gider miktarını alacagız asgari ücret kadar ise kredi alabilir. fazla ise kredi alamaz.
+//todo CEVAP-3:
+
+// const salary1 = +prompt("Enter your salary:");
+// const minSalary = 5500;
+// let newSalary = salary1 > minSalary ? salary1*1.1 : salary1* 1.5;
+// console.log(`New salary ${newSalary}₺'dir.`);
+
+
+//? ÖDEV-4 : Gelir - Gider miktarını alacagız asgari ücret kadar ise kredi alabilir. fazla ise kredi alamaz.
+
+//todo CEVAP-4:
+
+const income = +prompt("Enter your income");
+const expense = +prompt("enter your expense");
+
+const minSalary = 5500;
+
+
+// you can get a loan
+
+
+
