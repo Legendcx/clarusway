@@ -181,8 +181,8 @@ console.log("****** CONDITIONS *******");
 //todo CEVAP-3:
 
 // const salary1 = +prompt("Enter your salary:");
-// const minSalary = 5500;
-// let newSalary = salary1 > minSalary ? salary1*1.1 : salary1* 1.5;
+// const minimumWage = 5500;
+// let newSalary = salary1 > minimumWage ? salary1*1.1 : salary1* 1.5;
 // console.log(`New salary ${newSalary}₺'dir.`);
 
 
@@ -194,10 +194,10 @@ console.log("****** CONDITIONS *******");
 
 //  let income = +prompt("Enter your income");
 //  let expense = +prompt("enter your expense");
-//  let remaining = income - expense;
-//  let minSalary = 5500;
+//  let diff = income - expense;
+//  let minimumWage = 5500;
 
-// let situation = remaining >= minSalary ? "You can get a loan" : "You can't get a loan";
+// let situation = diff >= minimumWage ? "You can get a loan" : "You can't get a loan";
 // console.log(situation);
 
 
