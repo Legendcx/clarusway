@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+/* ! Burada nav-top kısmı vardır */
+nav.nav-top{
+    background-image:linear-gradient(to right, rgb(119, 99, 99),
+    rgba(207, 46, 207, 0.805));
+}
+/* dikey hizalama için margin veya vertical align veya flex kullanmalıyız */
+nav.nav-top img {
+    width: 55px;
+    height: 70px;
+    margin: 8px 12px;
+    border: 1px solid rgb(87, 11, 11);
+    outline: 3px solid red;
+    outline-offset: 4px;
+   
+    /* ressimler pixselle kullanmak daha iyidir. */
+}
+
+.nav-top .sign-in {
+    float: right;
+    margin: 2rem 4rem;
+    color: white;
+    font-weight: 700;
+    /* vertical-align: auto; */
+}
+
+.nav-top .sign-in a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav-top .sign-in a:hover {
+    color: black;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* ! nav-main */
+
+.nav-main {
+    display: inline-block;
+    background-color: rgb(238, 148, 84);
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+   
+}
+
+.nav-main a {
+    text-decoration: none;
+    margin: 1.5rem ;
+    color: black;
+    font-family: 'Audiowide', cursive;
+    /* text-align: center; */
+    display:inline-flex;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.nav-main a:hover {
+    color: white;cursor: pointer;
+}
+
+
+/* ! Main de paragraflar üzerinde çalışma yapıldı. */
+main {
+    margin: 40px;
+}
+
+main p {
+    text-indent: 4rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font: weight 100px;;
+}
+
+/* ! Slack amblemi üzerine çalışmadır. */
+
+.slack .fa-brands {
+    background-color: red;
+    color: white;
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+    display: in;
+    /* text-align: right; */
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    /* vertical-align:text-bottom; */
+   
+    display:inline-block;
+    padding-top: 5px;
+    
+}
+
+.slack .fa-brands:hover {
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}

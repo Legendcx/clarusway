@@ -1,0 +1,30 @@
+/*! Combinators */
+/* browser da browser a farklılık olduğu için her şeyi sıfırlıyoruz. */
+*{
+    box-sizing: border-box;
+    margin:0 ;
+    padding: 0ex;
+}
+
+/*? Descendant selectors */
+/* .kutu p {
+    color: red;
+} */
+/*? Child selector =parenti kutu olan p leri seç diyoruz. */
+/* .kutu > p {
+    color: green;
+} */
+
+/*? adjancent child = div elementi kapandıktan sonraki ilk elementin ilkini seçer */
+/*? en spesifik hangisi ise o olur. genel olan daha sonra gelir. */
+h1 + p {
+    color:darkorange;
+}
+
+
+/* ? general sibling selector = h1 elementinden sonraki tüm elementleri seçer */
+h1 ~ p {
+
+    color: darkorange;
+}
+ /* ? seviyeleri eşit olan seçicilerden en altta olan daha baskındır. */

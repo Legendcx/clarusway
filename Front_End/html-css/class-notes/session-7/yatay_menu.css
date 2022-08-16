@@ -1,0 +1,52 @@
+body{
+    font-family: 'Audiowide', cursive;
+/* font-family: 'Sorts Mill Goudy', serif; */
+}
+h1 {
+    text-align: center;
+    color: red;
+}
+
+nav.yatay_menu ul li a {
+    text-decoration: none;
+    color:black;
+}
+
+nav.yatay_menu ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.yatay_menu ul li {
+    display: inline-block;
+    background-color: wheat;
+    padding: 1rem 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    width: 5rem;
+    border-radius:10px; 
+}
+
+nav.yatay_menu ul li:hover {
+    background-color: tomato;
+    cursor:pointer;
+}
+
+nav.yatay_menu ul li:hover a {
+    color: white;
+}
+
+nav.acilir-menu ul {
+    display: none;
+}
+
+nav.acilir-menu ul li .fa-bars:active {
+    opacity: 0.5;
+}
+
+nav.acilir-menu:hover ul {
+    display: block;
+}
+
+
+/* inline da margin paddin almıyor. ama inline-blok verirsek daha iyi olur */

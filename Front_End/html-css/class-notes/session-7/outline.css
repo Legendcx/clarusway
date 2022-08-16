@@ -1,0 +1,10 @@
+h3 {
+    border: 1px solid red;
+    outline: 2px solid yellow;
+    outline-offset: 10px;
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    border-radius: 50%;
+    /* width ve height aynı olur ve border radius 50% yaparsak yuvarlak olur şeklimiz. */
+}
