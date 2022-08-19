@@ -1,0 +1,91 @@
+.yazi {
+text-align: center;
+font-size: 2rem;
+margin: 2rem auto;
+width: ;
+}
+
+.yazi1{
+    background-color: greenyellow;
+    transform: rotateX(180deg); /* 90 ve 270 deg kullanırsak tam dik oldukları için yazıya 3boyutlu bakmadığımız için yazılar gözükmez*/
+}
+
+.yazi2 {
+    background-color: rebeccapurple;
+    transform: rotateY(180deg);
+}
+
+.yazi3 {
+    background-color: coral;
+    /* transform: rotate(-30deg); */
+    transform: rotateZ(10deg);
+}
+
+.yazi4 {
+    background-color: crimson;
+}
+.yazi4:hover {
+    background-color:aqua;
+    transform: scaleX(1.5) scaleY(2);
+    
+}
+
+.yazi5 {
+    background-color: dodgerblue;
+}
+
+.yazi5:active {
+    transform: scale(1.1, 1.2);
+    transform: scale(97%);
+    color: aqua;
+}
+
+.translate {
+    background-color: yellow;
+    font-weight: 800;
+    font-size: 1.1rem;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    transition: color 1s,tranform 1s;
+    /* ! transition da araya virgül koyuyoruz. */
+    /* todo neyi izlemesini istiyorsak transition a yazarız ve ona süresini belirtiriz oda takip edip uygular */
+}
+.x:hover {
+    /* ! transforma da araya virgül kymuyoruz. özellikleri yazarken */
+transform: translateX(40px);
+background-color: brown;
+}
+
+.y:active {
+transform: translateY(-20px);
+background-color: tomato;
+}
+
+.xy:active {
+transform: translate(50px 100px);
+background-color: fuchsia;
+}
+
+.buton-div {
+    text-align: center;
+}
+.buton {
+    padding: 1rem;
+    width: 7rem;
+    background-color: goldenrod;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: backgroun-color 1s, color 0.5;
+
+}
+
+.buton:hover {
+    background-color: blue;
+    color: red;
+}
+
+.buton:active {
+    transform: scale(95%);
+}

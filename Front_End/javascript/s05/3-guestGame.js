@@ -22,6 +22,6 @@ if (tahmin !== rastgele) {
   console.log("Uzgunuz oyunu kaybettiniz 😔😔");
 }
 
-// for (hak;hak>0; hak--){
+for (hak;hak>0; hak--){
 
-// }
+}

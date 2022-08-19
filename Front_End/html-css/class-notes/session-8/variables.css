@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import "./themes.css";
+
+/* font-family: 'DynaPuff', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+h1 {
+    color: var(--mavi2);
+}
+
