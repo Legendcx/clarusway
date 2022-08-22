@@ -97,17 +97,6 @@ console.log("###### Burhan FUNCTİON #######");
 // console.log(tekcift(2));
 
 
-
-
-
-// function tekcift(sayi){
-//     return sayi % 2 ? `${sayi} TEK-tir` : `${sayi} ÇİFT-tir`;
-//     //? sayi %2 = bzize true veya false değer verir. harika bir özellik
-// }
-
-// console.log(tekcift(5));
-// console.log(tekcift(2));
-
 // const sayi = +prompt("bir sayı giriniz: ");
 // console.log(tekcift(sayi));
 //! buraya n yazarsak yine değişir. buradan biz değişkenin kendisini göndermiyoruz. onun value sini gönderiyoruz. isimler farklı olabilr.
@@ -172,43 +161,43 @@ console.log("###### Burhan FUNCTİON #######");
 // hesapla = topla, çıkarma, çarpma, 
 
 
-const hesapla = function(sayi1, sayi2, islem) {
-    let sonuc = 0;
-    switch (islem) {
-        case "+":
-        sonuc = topla(sayi1,sayi2);
+// const hesapla = function(sayi1, sayi2, islem) {
+//     let sonuc = 0;
+//     switch (islem) {
+//         case "+":
+//         sonuc = topla(sayi1,sayi2);
         //! sonunc yerine return yaparsak return topla(sayi1, sayi2); dersek break a gerk yoktur. return fonksiyonu bitirir ve çıktı verir. her zaman return en sonda olur.
-        break;
-        case "-":
-        sonuc = cikar(sayi1,sayi2);
-        break;
-        case "*":
-        sonuc = carp(sayi1, sayi2);
-        break;
-        case "/":
-        sonuc = bol(sayi1, sayi2);
-        break;
-        default:
-            break;
-    }
-    return sonuc;
-}
+//         break;
+//         case "-":
+//         sonuc = cikar(sayi1,sayi2);
+//         break;
+//         case "*":
+//         sonuc = carp(sayi1, sayi2);
+//         break;
+//         case "/":
+//         sonuc = bol(sayi1, sayi2);
+//         break;
+//         default:
+//             break;
+//     }
+//     return sonuc;
+// }
 
 
-const topla = function (sayi1, sayi2) {
-    return sayi1 + sayi2;
-}
+// const topla = function (sayi1, sayi2) {
+//     return sayi1 + sayi2;
+// }
 
-const cikar = function (sayi1, sayi2) {
-    return sayi1 - sayi2;
-}
+// const cikar = function (sayi1, sayi2) {
+//     return sayi1 - sayi2;
+// }
 
-const carp = function (sayi1, sayi2) {
-    return sayi1 * sayi2;
-}
+// const carp = function (sayi1, sayi2) {
+//     return sayi1 * sayi2;
+// }
 
-const bol = function (sayi1, sayi2) {
-    return sayi1 / sayi2;
-}
+// const bol = function (sayi1, sayi2) {
+//     return sayi1 / sayi2;
+// }
 
-console.log(hesapla(5,6, "/"));
+// console.log(hesapla(5,6, "/"));
