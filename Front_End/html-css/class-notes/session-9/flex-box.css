@@ -22,16 +22,95 @@ text-align: center;
     margin: 1rem;
    
 }
-
+  
 .container1 {
     display: flex;
+    /*flex-direction = column yaparsak  yatay dikey hizalama tam tersine uygulamamız gerekir.*/
+    gap: 20px 10px;
     height: 20rem;
     background-color: greenyellow;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items:center; */
+    align-content:center;
+    overflow: auto;
+    
+    /*dikey hizalama için align-item kullanılır.*/
 
 }
 
 .container1 div {
     background-color: coral;
     height: 5rem;
+    width: 5rem;
+    
 
 }
+/*flex-basis= container in içindeki itemlerin nasıl dağıtılacağını ayarlar */
+
+/*! flex=grow-shrink-basis şeklinde shorthands yapılır.*/
+
+
+.container2 {
+    background-color: hotpink;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.container2 div {
+    background-color: khaki;
+    /* width: 5rem; */
+    flex-grow: 1;
+
+    flex-basis: 0;
+    /*flex-basis div iindeki itemslere ihtiyacı kadar yer tahsis ediyor. aksi takdirde içerğin büyüklüğü kadar bir uzunluk veriyor. tabiki (0) olunca*/
+}
+
+
+.container2 .grow3 {
+    flex-grow: 3;
+}
+
+.container2 .nogrow {
+    flex-grow: 0;
+}
+
+
+/*todo FLEX GROW AMA WİDTH LERLE*/
+
+.container3 {
+    background-color:cyan;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.container3 div {
+    background-color:darkred;
+}
+
+div.div1 {
+    width: 10%;
+}
+
+div.div2 {
+    width: 20%;
+}
+
+div.div3 {
+    width: 30%;
+}
+
+div.div4 {
+    /* width: 40%; */
+}
+
+/*burada width lerin oranına göre uzatıp kısaltıyoruz.*/
+
+/*vievport ta tarayıcının parenti alınır.
+width ise kapsadığı div in % desini alır.*/
