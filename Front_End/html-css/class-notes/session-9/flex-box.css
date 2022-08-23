@@ -1,0 +1,37 @@
+
+*{
+font-size: 1.2rem;
+text-align: center;
+}
+.container {
+    background-color: fuchsia;
+    display: flex;
+    flex-direction: row;/*elemanların diziliş yönünü bu metod yapar*/
+    flex-wrap: wrap;/*(nowrap) sıkıştırma veya alt satıra geçirme*/
+    justify-content:center;
+    /*blok bir elementin width=100% 'dür. yatay hizalama için justify-content kullanılır. */
+    /* gap:5px 300px; */
+
+}
+
+.container div {
+
+    background-color: gold;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+   
+}
+
+.container1 {
+    display: flex;
+    height: 20rem;
+    background-color: greenyellow;
+
+}
+
+.container1 div {
+    background-color: coral;
+    height: 5rem;
+
+}
