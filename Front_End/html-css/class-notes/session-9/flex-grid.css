@@ -4,16 +4,20 @@
     margin: 0;
     font-size: 1rem;
     text-align: center;
+    
 }
 
 .container {
     width: 100%;
+    
+    
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-}
+    margin: 2px;
+  }
 
 .col-1 {
     width: 8.333333%;
@@ -71,9 +75,45 @@
 
   .menu {
     background-color: hotpink;
+    padding: 1rem;
   }
 
   .banner {
     background-color: aqua;
+    padding: 4rem;
+  }
+
+  .bolum1 {
+    background-color: blue;
+    padding: 1vw;
+  }
+
+  .bolum2 {
+    background-color:cadetblue;
+    padding: 1vw;
+  }
+
+  .bolum3 {
+    background-color:chartreuse;
+    padding: 1vw;
+  }
+  
+  .bolum4 {
+    background-color:coral;
     padding: 1rem;
+  }
+
+  .bolum5 {
+    background-color:gold;
+    padding: 1rem;
+  }  
+
+  .bolum6 {
+    background-color: aqua;
+    padding: 1rem;
+  }
+
+  .footer {
+    background-color: brown;
+    padding: 2rem;
   }
