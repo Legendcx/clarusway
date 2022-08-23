@@ -1,8 +1,9 @@
 
-*{
+* {
 font-size: 1.2rem;
 text-align: center;
 }
+
 .container {
     background-color: fuchsia;
     display: flex;
@@ -107,7 +108,7 @@ div.div3 {
 }
 
 div.div4 {
-    /* width: 40%; */
+    width: 40%;
 }
 
 /*burada width lerin oranına göre uzatıp kısaltıyoruz.*/
