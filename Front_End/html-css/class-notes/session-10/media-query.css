@@ -1,0 +1,125 @@
+@import "./themes.css"
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color:deepskyblue;
+    color: black;
+    margin: 1rem;
+}
+
+h1 {
+    background-color: crimson;
+    width: 17rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: 500;
+
+}
+
+.header {
+    background-color: greenyellow;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    background-color: gray;
+    transition: all 1s;
+    margin-bottom: 1rem;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    
+}
+
+.navbar a:hover{
+    background-color: cadetblue;
+    color: black;
+    font-weight: 550;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem 0rem;
+}
+
+.col{
+padding: 1rem;
+/* columns: 25%; */
+}
+
+.fs{
+    background-color: darkgrey;
+    width: 35%;
+}
+
+.aws {
+    width: 20%;
+    background-color: dimgray;
+}
+
+.data {
+    width: 30%;
+    background-color: lightslategray;
+}
+
+.cms {
+    width: 15%;
+    background-color: lightsteelblue;
+}
+
+@media screen and (min-width:600px) and (max-width:992) { 
+    body {
+        color: white;
+        background-color: indianred;
+}
+.col {
+    width: 50%;
+    margin: 0.5rem;
+}
+h1{
+    width: 12rem;
+    font-size: 1.5rem;
+}
+
+}
+
+@media screen and (min-width:0px) and (max-width:600px) { 
+    body {
+        background-color: purple;
+        color: white;
+
+    }
+    .navbar {
+        flex-direction: column;
+        /* align-items:center; */
+        text-align: center;
+    }
+    .header {
+        display: none;
+    }
+    .col {
+    width: 100%;
+    }
+    h1 {
+        width: 12rem;
+        font-size:1rem;
+    }
+
+}

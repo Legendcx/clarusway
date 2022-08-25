@@ -1,22 +1,35 @@
+
+:root{
+  --acik-yesil2: #618C03; 
+  --sari-bir-ton: #F2B705; 
+  --koyu-sari: #D97904; 
+  --domates-rengiGibi: #D92B04; 
+  --kırmızının-tonu: #8C0E03;
+  --ff-nunito: "Nunito", sans-serif;
+  --ff-dyna: "DynaPuff", cursive;
+    }
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-size: 1rem;
     text-align: center;
+    color: white;
+   
     
 }
 
 .container {
     width: 100%;
-    
+   
     
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 2px;
+   
   }
 
 .col-1 {
@@ -68,52 +81,42 @@
   }
   
   .logo {
-    background-color: tomato;
+    /* background-color: var(--kırmızının-tonu); */
+    background-color: aquamarine;
     padding: 1rem;
   }
 
 
   .menu {
-    background-color: hotpink;
+    background-color: skyblue;
     padding: 1rem;
   }
 
   .banner {
-    background-color: aqua;
+    background-color: red;
     padding: 4rem;
+    font-family: var(--ff-nunito);
   }
 
-  .bolum1 {
-    background-color: blue;
-    padding: 1vw;
+.bolum1,
+.bolum2,
+.bolum3 {
+    background-color: greenyellow;
+    height: calc(100vh - 330px);
+    /* align-items: center; */
+    border: 2px solid grey;
   }
 
-  .bolum2 {
-    background-color:cadetblue;
-    padding: 1vw;
-  }
-
-  .bolum3 {
-    background-color:chartreuse;
-    padding: 1vw;
-  }
   
-  .bolum4 {
-    background-color:coral;
+  .bolum4, .bolum5, .bolum6 {
+    background-color:tomato;
     padding: 1rem;
-  }
+    border: 2px solid grey;
 
-  .bolum5 {
-    background-color:gold;
-    padding: 1rem;
-  }  
-
-  .bolum6 {
-    background-color: aqua;
-    padding: 1rem;
   }
 
   .footer {
-    background-color: brown;
+    background-color: violet;
     padding: 2rem;
+    font-family: var(--ff-dyna);
   }

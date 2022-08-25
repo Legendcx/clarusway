@@ -1,0 +1,145 @@
+:root {
+    /* */ 
+--mavi1: hsl(205, 100%, 30%);
+--mavi2: hsl(205, 100%, 40%);
+--mavi3: hsl(205, 100%, 50%);
+--mavi4: hsl(205, 100%, 60%);
+--mavi5: hsl(205, 100%, 70%);
+
+
+/* asil renklerin acik tonları */
+--mavi-6: hsl(205, 89%, 70%);
+--mavi-7: hsl(205, 90%, 76%);
+--mavi-8: hsl(205, 86%, 81%);
+--mavi-9: hsl(205, 90%, 88%);
+--mavi-10: hsl(205, 100%, 96%);
+--mavi-11: hsl(205, 3%, 95%);
+
+/* Basliklar icin kullanilan koyu tonlar */
+--gri-1: hsl(209, 61%, 16%);
+--gri-2: hsl(211, 39%, 23%);
+--gri-3: hsl(209, 34%, 30%);
+--gri-4: hsl(209, 28%, 39%);
+
+/* Paragraflar icin kullanilan renkler */
+--gri-5: hsl(210, 22%, 49%);
+--gri-6: hsl(209, 23%, 60%);
+--gri-7: hsl(211, 27%, 70%);
+--gri-8: hsl(210, 31%, 80%);
+--gri-9: hsl(212, 33%, 89%);
+--gri-10: hsl(210, 36%, 96%);
+
+
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    /* max-width: 800px; */
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-top: 2rem;
+    background-image: linear-gradient(
+    to right,
+    rgba(72, 166, 233, 0.555),
+    rgb(72, 167, 233)
+  );
+    /* border: 1px solid red; */
+    /* align-items: center; */
+}
+
+.logos{
+    display: flex;
+    /* margin: 5px; */
+    width: 35%;
+    height: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+    
+}
+
+.logos img {
+    width: 30px;
+    height: 25px;
+    margin-left: 3px;
+}
+ 
+/* .logos i {
+    /* width: 80px; 
+    height: 25px;
+    color: var(--gri-8);
+    margin: 5px;
+   align-items: center;
+     background-color: var(--mavi-6) ; 
+} */ 
+
+
+.menu {
+    width: 30%;
+    display: flex;
+    min-width: 90px;
+    margin: 0 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 2px solid rgba(128, 128, 128, 0.686);
+    border-radius: 5px;
+    /* gap: 0px 10px; */
+    background-color: var(--mavi-9);
+    /* height: 30px; */
+
+
+
+}
+.menu a {
+    margin: 5px;
+    text-decoration: none;
+   
+}
+.menu a:hover{
+    color: var(--mavi2);
+    padding: 5px;
+    border: 1px solid var(--mavi-6);
+    border-radius: 8px;
+    background-color: var(--mavi-10);
+    cursor: pointer;
+    transform: scale(1);
+} 
+
+.iletisim {
+    display: flex;
+    width: 35%;
+    justify-content:flex-end;
+    
+}
+
+.fa-instagram {
+    margin: 0 10px;
+}
+
+.fa-square-facebook{
+    margin-right: 5px;
+}
+
+.fa-brands:hover {
+    color: white;
+    transition: all ease-in 1s;
+    transform: scale(1,1);
+    width: 10px;
+    height: 10px;
+}

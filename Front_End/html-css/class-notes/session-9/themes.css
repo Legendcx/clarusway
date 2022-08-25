@@ -1,0 +1,94 @@
+
+/* */ 
+--mavi1: hsl(205, 100%, 30%);
+--mavi2: hsl(205, 100%, 40%);
+--mavi3: hsl(205, 100%, 50%);
+--mavi4: hsl(205, 100%, 60%);
+--mavi5: hsl(205, 100%, 70%);
+
+
+/* asil renklerin acik tonları */
+--mavi-6: hsl(205, 89%, 70%);
+--mavi-7: hsl(205, 90%, 76%);
+--mavi-8: hsl(205, 86%, 81%);
+--mavi-9: hsl(205, 90%, 88%);
+--mavi-10: hsl(205, 100%, 96%);
+--mavi-11: hsl(205, 3%, 95%);
+
+/* Basliklar icin kullanilan koyu tonlar */
+--gri-1: hsl(209, 61%, 16%);
+--gri-2: hsl(211, 39%, 23%);
+--gri-3: hsl(209, 34%, 30%);
+--gri-4: hsl(209, 28%, 39%);
+
+/* Paragraflar icin kullanilan renkler */
+--gri-5: hsl(210, 22%, 49%);
+--gri-6: hsl(209, 23%, 60%);
+--gri-7: hsl(211, 27%, 70%);
+--gri-8: hsl(210, 31%, 80%);
+--gri-9: hsl(212, 33%, 89%);
+--gri-10: hsl(210, 36%, 96%);
+
+--mor: hsl(276, 85%, 49%);
+
+--beyaz: #fff;
+--koyu-kirmizi: hsl(360, 67%, 44%);
+--acik-kirmizi: hsl(360, 71%, 66%);
+--koyu-yesil: hsl(125, 67%, 44%);
+--acik-yesil: hsl(125, 71%, 66%);
+--siyah: #222;
+
+/* Color Theme Swatches in Hex */
+--green1: #042940;
+--green2: #005c53;
+--green3: #9fc131;
+
+/** Fonts */
+--ff-dyna: "DynaPuff", cursive;
+--ff-nunito: "Nunito", sans-serif;
+--ff-open-sans: "Open Sans", sans-serif;
+
+--koyu-golge: 0px 0px 15px rgba(0, 0, 0, 0.4);
+--acik-gogle: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+/* Color Theme Swatches in Hex */
+--acik-yesil2: #618C03; 
+--sari-bir -ton: #F2B705; 
+--koyu-sari: #D97904; }
+--domates-rengiGibi: #D92B04; 
+--kırmızının-tonu: #8C0E03;
+
+/* Color Theme Swatches in RGBA */
+.Lezzet-1-rgba { color: rgba(96, 140, 2, 1); }
+.Lezzet-2-rgba { color: rgba(242, 182, 4, 1); }
+.Lezzet-3-rgba { color: rgba(216, 121, 4, 1); }
+.Lezzet-4-rgba { color: rgba(216, 43, 4, 1); }
+.Lezzet-5-rgba { color: rgba(140, 14, 2, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Lezzet-1-hsla { color: hsla(78, 96, 28, 1); }
+.Lezzet-2-hsla { color: hsla(45, 96, 48, 1); }
+.Lezzet-3-hsla { color: hsla(33, 96, 43, 1); }
+.Lezzet-4-hsla { color: hsla(11, 96, 43, 1); }
+.Lezzet-5-hsla { color: hsla(5, 96, 28, 1); }
+
+/* Color Theme Swatches in Hex */
+.Bright-Blue-Dark-Teal-Aqua-Orange-1-hex { color: #026E81; }
+.Bright-Blue-Dark-Teal-Aqua-Orange-2-hex { color: #00ABBD; }
+.Bright-Blue-Dark-Teal-Aqua-Orange-3-hex { color: #0099DD; }
+.Bright-Blue-Dark-Teal-Aqua-Orange-4-hex { color: #FF9933; }
+.Bright-Blue-Dark-Teal-Aqua-Orange-5-hex { color: #A1C7E0; }
+
+/* Color Theme Swatches in RGBA */
+.Bright-Blue-Dark-Teal-Aqua-Orange-1-rgba { color: rgba(2, 110, 128, 1); }
+.Bright-Blue-Dark-Teal-Aqua-Orange-2-rgba { color: rgba(0, 170, 188, 1); }
+.Bright-Blue-Dark-Teal-Aqua-Orange-3-rgba { color: rgba(0, 153, 221, 1); }
+.Bright-Blue-Dark-Teal-Aqua-Orange-4-rgba { color: rgba(255, 153, 51, 1); }
+.Bright-Blue-Dark-Teal-Aqua-Orange-5-rgba { color: rgba(161, 198, 223, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Bright-Blue-Dark-Teal-Aqua-Orange-1-hsla { color: hsla(188, 96, 25, 1); }
+.Bright-Blue-Dark-Teal-Aqua-Orange-2-hsla { color: hsla(185, 100, 37, 1); }
+.Bright-Blue-Dark-Teal-Aqua-Orange-3-hsla { color: hsla(198, 100, 43, 1); }
+.Bright-Blue-Dark-Teal-Aqua-Orange-4-hsla { color: hsla(30, 100, 60, 1); }
+.Bright-Blue-Dark-Teal-Aqua-Orange-5-hsla { color: hsla(203, 50, 75, 1); }

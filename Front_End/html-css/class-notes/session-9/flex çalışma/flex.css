@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    /* margin: 5px; */
+    border: 2px groove black;
+    background-color: red;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap; 
+    /* ! flex-flow özelliği yukarıdaki iki özelliği birleştirir. */
+    justify-content:space-evenly;
+    /* ! bu evenly bütün öğelerin aransındaki boşlukları eşit olarak dağıtır. (Around dağıtr ama baştan ve sondan biraz daha za boşluk bırakır. */
+    align-items:center;
+    /* !öğeleri dikey olarak hizalamak istiyorsak align-items i kullanmalıyız. */
+    align-content: center;
+    /*! align-content = bu özellik wrap açıldığında ve yükseklik uygun olduğunda uygulanır.*/
+}
+
+.flex-container > div {
+    background-color: azure;
+    margin: 0.2rem;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+/* ! FLEX ITEM PROPERTİES 
+bunlar order, flex-grow, flex-shrink, flex-basis, flex, align-self
+ORDER = esnek öğenin sırasını belirtir. 
+kimin numarası büyükse hizalama durumuna gööre sona gelir. order:2; */
+
+/* ? flex: (3özelliğin bir arada olmasıdır. (flex-grow/shrink/basis)son iki değer isteğe bağlıdır. */
+
+.box4 {
+    order: 1;
+}
+
+.box3 {
+    flex-grow: 2;
+    /* flex-grow esnek öğenin geri kalanlarına göre nasıl daha büyüyeceğini belirtir. Negatif değer almaz. */
+}
+
+.box1 {
+    flex-shrink: 4;
+    /* flex-grow esnek öğenin geri kalanlarına göre nasıl daha küçüleceğini belirtir. */
+}
+
+.box5 {
+    flex-basis: 20%;
+    /* genişlik ve yüksekliğinin belirtilen değerler ölçüsünde artmasıdır. */
+}
+
