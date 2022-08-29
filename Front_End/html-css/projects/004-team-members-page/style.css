@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    justify-content: center;
+    gap: 3rem 3rem;
+    max-width: 1300px;
+    min-width:380px ;
+}
+.metin {
+    display: flex;
+    max-width: 1200px;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 30px; */
+    
+}
+.creative {
+    display: flex;
+    width: 48%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+.who {
+    display: flex;
+    width: 48%;
+    font-size: 1.1rem;
+    flex-direction: column;
+   
+}
+
+.picture-frame {
+    display: flex;
+    padding-top: 30px;
+    height: 390px;
+    margin-bottom: 60px;
+    width: 30%;
+    justify-content: center;
+   
+}
+
+.frame{
+    width: 260px;
+
+}
+
+.frame img{
+    width: 250px;
+    height: 360px;
+    border-radius: 13px;
+    box-shadow: -15px 13px 20px black;
+    
+}
+
+img:hover {
+    
+    transform: scale(1.1);
+    transition: all 2s linear;
+    /* box-shadow: slategray; */
+}
+/* 
+.frame .job {
+  transform: translate(255px, -410px );
+  font-size: 0.8rem;
+  font-weight: bold;
+  writing-mode: tb-rl;
+} */
+
+.frame .job {
+    transform: translate(135px, -290px ) rotate(90deg);
+   font-size: 0.8rem;
+   font-weight: bold;
+   /* writing-mode: tb-rl; */
+ } 
+
+.frame .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.down {
+    padding-top: 30px;
+}
+
+.up{
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width:1010px) {
+    .metin {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:800px){
+    .picture-frame {
+        width: 50%;
+    }
+    .metin {
+        max-width: 700px;
+        flex-direction: column;
+        align-items: center;
+            }
+    .container {
+        max-width: 750px;
+    }
+    .creative {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .picture-frame {
+        width: 100%;
+        margin: 25px;
+    }
+    .metin {
+        max-width: 520px;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+            }
+    .container {
+        max-width: 560px;
+    }
+    
+}
+
+
