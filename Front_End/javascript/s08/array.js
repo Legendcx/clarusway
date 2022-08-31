@@ -1,4 +1,4 @@
-//! array 'in adresi stack 'ta durur. amam veriler heap'te tutulur. bu çağırırken daha hızlı olması için. ve belleği en efektif şekilde kullanmaktır. array non-primitive bir veri yapısıdır. 
+//! array 'in adresi stack 'ta durur. her zaman veriler heap'te tutulur. bu çağırırken daha hızlı olması için. ve belleği en efektif şekilde kullanmaktır. array non-primitive bir veri yapısıdır. 
 const myArr = [1, 2.5, "true", "Burhan"]
 //? diziler sıralı =ordered'dır. ve zero=index le başlar. 
 //! Array constructure yönetimi ile oluşturma 
@@ -26,6 +26,17 @@ const myArr = [1, 2.5, "true", "Burhan"]
 
 // console.log(cars.at(-1));
 // //? pozitif ve negatif değer alabilir.
+
+//! 10 elemanlik bos bir Array oluşturdu
+const numbers1 = new Array(10);
+console.log(numbers1);
+
+// ! 3.Yöntem (Array.of())
+const veriler = Array.of(1, 2, 3);
+console.log(veriler);
+
+const veri = Array.of(10);
+console.log(veri);
 
 //! diziye verii yazma nasıl olur.
 const cars = ["Mercedes", "Fiat", "Toyota", "Ferrari"];
@@ -70,7 +81,7 @@ arabalar.splice(1, 0, "Passat");
 // birinci indexe ekle diyoruz. 0 la silme diyoruz kaydırıyoruz.splice(eklenecek indis, 0 ise araya ekleme= 1 ise üzerine yaz, eklenecek value)
 console.log(arabalar);
 
-arabalar.splice(4, 1, "Honda");
+arabalar.splice(3, 1, "Honda");
 console.log(arabalar);
 
 //! reverse() komple ters çevirir diziyi
@@ -92,7 +103,7 @@ const array1 = [1, 2, 3, 4];
 array1.fill(0);
 console.log(array1);
 
-//!birinci oarametre doldurulacak elemanı yazıyoruz. 2. parametre ise doldurulacak parametreyi yazıyoruz.
+//!birinci parametre doldurulacak elemanı yazıyoruz. 2. parametre ise doldurulacak parametre sırasını yazıyoruz.
 array1.fill(-1, 1);
 console.log(array1);
 
@@ -150,3 +161,23 @@ const names = ["Ahmet", "Can", "Mustafa", "Merve", "Can"];
 
 const indexBul = yasArray.findIndex((yas) => yas >= 30);
 console.log(indexBul);
+
+//! lastIndex( içinde aranan eleamn uoksa (-1) değerini return eder.)
+//! Odev: prompt ile konsoldan bir sayi istenmeli (string veya number
+//! olarak) eger bu girilen sayi, dizi icerisinde bulunuyorsa indisi
+//! (string ve number olarak ayri) yazdirilmalidir. Eger bulunamadiysa
+//! Aranilan bulunamamistir yazidirilmalidir.
+//!-----------------------------------------------------------
+
+const numberB = [1, "bir", 2, "2", "iki", 3, "üç", 4, "dört", 5, "beş", 6, "altı", 7, "yedi", 8, "sekiz", 9, "dokuz"]
+
+let sayiGir = prompt("Enter a figure(write or number").toLowerCase();
+
+if (numberB.includes(sayiGir)) {
+  console.log(numberB.indexOf(sayiGir));
+ } else if (sayiGir === Number(sayiGir)) {
+   console.log(numberB.indexOf(sayiGir));
+} else {
+  console.log("Aranılan bulunamamıştır.");
+
+}
