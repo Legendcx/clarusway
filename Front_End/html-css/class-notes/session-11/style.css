@@ -1,0 +1,159 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variable tanımladık*/
+/*Variable kullandık*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: pink;
+  font-size: 1.2rem;
+  color: white;
+}
+
+header {
+  background-color: #30a7c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header img {
+  width: 80px;
+  border: 2px solid brown;
+  border-radius: 10px;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li:hover {
+  text-decoration: underline;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: hotpink;
+  padding: 1rem;
+  line-height: 2rem;
+  align-items: center;
+}
+.banner aside button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #30a7c3;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+.banner aside button:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+.banner img {
+  width: 30%;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+/**************** CARDS *************************/
+/* mixin yapttık tanımladık*/
+.cards {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.7rem;
+}
+.cards .card1 {
+  background-color: green;
+  width: 25%;
+  height: 15rem;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+.cards .card2 {
+  background-color: brown;
+  width: 25%;
+  height: 15rem;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+.cards .card3 {
+  background-color: yellow;
+  width: 25%;
+  height: 15rem;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+.cards .card4 {
+  background-color: black;
+  width: 25%;
+  height: 15rem;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+
+/**** extend yaptık burada aşağıda*/
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+.articles .article1, .articles .article2 {
+  background-color: grey;
+  width: 50%;
+  border: 1px solid black;
+  height: 10rem;
+  border-radius: 5px;
+}
+.articles .article2 {
+  background-color: hotpink;
+}
+
+/******* FOOTER   ************************/
+footer .social-icons {
+  display: flex;
+  height: 10rem;
+}
+footer .social-icons .social1 {
+  width: 20%;
+  background-color: #ff3333;
+  font-size: 1rem;
+}
+footer .social-icons .social2 {
+  width: 20%;
+  background-color: #ff6666;
+  font-size: 2rem;
+}
+footer .social-icons .social3 {
+  width: 20%;
+  background-color: #ff9999;
+  font-size: 3rem;
+}
+footer .social-icons .social4 {
+  width: 20%;
+  background-color: #ffcccc;
+  font-size: 4rem;
+}
+footer .social-icons .social5 {
+  width: 20%;
+  background-color: white;
+  font-size: 5rem;
+}
+
+/**** IF ELSE YAPISI *******/
+footer p {
+  background-color: blueviolet;
+}
+
+/*# sourceMappingURL=style.css.map */

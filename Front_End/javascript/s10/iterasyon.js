@@ -12,7 +12,7 @@ const topla = (n) => {
     }
   }
   console.log(`Dizideki Pozitif Sayıların Toplamı: ${pozitifler}`);
-  console.log(`Dizideki Pozitif Sayıların Toplamı: ${negatifler}`);
+  console.log(`Dizideki Negatif Sayıların Toplamı: ${negatifler}`);
 };
 topla(dizi);
 //!----------------------------------------
@@ -296,7 +296,71 @@ console.log(lessThan9000);
 //* ======================================================
 
 //* ======================================================
-//*                 REDUCE METHOD
+//*                 REDUCE METHOD-Azalmak/Küçülmek demek
 //* ======================================================
 
+const numbers = [1, 2, 3, 4, 5];
+let total4 = numbers.reduce((acc, number) => acc + number, 5); // ? bu 5'i buraya yazmak başlangıç değeri verebiliyoruz. diziyi küçülterek toplam bir değer döndürüyor.
 
+console.log(total4);
+
+const basket = [{
+  name : "i phone 8",
+  price:7000  
+}, 
+{
+
+  name:"Apple Macbook Pro",
+  price : 14000
+},
+ {
+  name:"Harman/Kardon",
+  price:2500
+ }
+]
+
+let sum = basket.reduce((acc, item) => acc + item.price, 0); ///!burada başlangıç değeri girmeliyiz.
+console.log(sum); 
+
+const names2 = ['Tayfun', 'Burhan', 'Ebru', 'Gökhan', 'Tayfun'];
+
+let countedNames = names2.reduce((acc, name) => {
+  if (name in acc) {
+    acc[name]++
+  } else {
+    acc[name] = 1
+  }
+  return acc
+}, {});
+
+console.log(countedNames);
+
+const productss = [
+ { name : "burak Mmikrofon",
+  brand: "Rode"
+},
+{
+  name: "iphone xs",
+  brand : "Apple"
+}, 
+{
+  name : "Smart plus",
+  brand : "Rode"
+},
+{
+  name: "Klavye Microsoft",
+  brand : "Microsoft"
+}
+]
+
+let group = "brand";
+let groupPro = productss.reduce((acc, product) => {
+  let key = product[group]
+  if (!acc[key]) {
+    acc[key] = []
+  }
+  acc[key].push(product)
+  return acc
+}, {});
+
+console.log(groupPro);

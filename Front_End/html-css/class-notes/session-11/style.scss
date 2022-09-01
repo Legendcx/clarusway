@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Variable tanımladık*/
+$bgColor: pink;
+$fontSize:1.2rem;
+$fontColor:white;
+$navBgColor: #30a7c3;
+$fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$bannerBgColor:hotpink;
+$myborder:2px solid brown;
+
+
+/*Variable kullandık*/
+body {
+    font-family: $fontFamily; 
+    background-color: $bgColor;
+    font-size: $fontSize;
+    color: $fontColor;
+}
+
+header {
+    background-color: $navBgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    img {
+        width: 80px;
+        border:$myborder;
+        border-radius: 10px;
+    }
+    ul{
+        list-style-type: none;
+        li{
+            display: inline-block;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
+    a{
+        color: $fontColor;
+        text-decoration: none;
+        padding: 0.5rem;
+    }
+}
+
+//*****************BANNER**********/
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    background-color: $bannerBgColor;
+    padding: 1rem;
+    line-height: 2rem;
+    align-items: center;
+    aside{
+        button{
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            background-color: $navBgColor;
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+            &:hover{
+                background-color: $bgColor;
+                cursor: pointer;
+            }
+        }
+
+    }
+    img{
+        width: 30%;
+        min-width: 250px;
+        max-width: 400px;
+    }
+}
+
+/**************** CARDS *************************/
+
+/* mixin yapttık tanımladık*/
+@mixin myBox($backColor, $color) {
+    background-color: $backColor;
+    width: 25%;
+    height: 15rem;
+    border: $myborder;
+    border-radius: 5px;
+    
+}
+.cards{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.7rem;
+    .card1{
+        @include myBox(green, white)
+    
+    }
+    .card2{
+        @include myBox(brown, white)
+
+    }
+    .card3{
+        @include myBox(yellow, white )
+
+    }
+    .card4{
+        @include myBox(black, white )
+    }
+}
+
+/**** extend yaptık burada aşağıda*/
+.articles{
+    display: flex;
+    padding: 1rem;
+    gap:1rem;
+    .article1{
+        background-color: grey;
+        width: 50%;
+        border: 1px solid black;
+        height: 10rem;
+        // margin-right: 1rem;
+        border-radius: 5px;
+        
+    }
+    .article2{
+        @extend.article1;
+        background-color: hotpink;
+
+    }
+}
+
+/******* FOOTER   ************************/
+
+footer{
+    .social-icons{
+        display: flex;
+        height: 10rem;
+
+        @for $i from 1 through 5 {
+            .social#{$i}{
+                width: 20%;
+                background-color: lighten(red, $i*10);
+                font-size: $i * 1rem;
+            }
+        }
+
+    }
+    
+}
+
+
+/**** IF ELSE YAPISI *******/
+$dark:4;
+
+footer {
+    p{
+        @if $dark==1 {
+            background-color: grey;
+            
+        }@else if $dark==2{
+            background-color: aqua;
+        }@else {
+            background-color: blueviolet;
+        }
+    
+    }
+}
+
+

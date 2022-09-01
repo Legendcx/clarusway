@@ -181,3 +181,48 @@ if (numberB.includes(sayiGir)) {
   console.log("Aranılan bulunamamıştır.");
 
 }
+//----------------------------------------------------
+
+let hesapA = {
+  name : "Burhan YİĞİTER",
+  hesapNo : "123456789",
+  bakiye : 2000,
+  ekHesap : 1000
+}
+
+let hesap = {
+  name : "Ebru AYHAN", 
+  hesapNo : "1234567",
+  bakiye : 3000,
+  ekHesap : 2000
+}
+
+function paraCek (hesap, miktar){
+  console.log(`Merhaba ${hesap.name}`);
+  hesap.bakiye = hesap.bakiye - miktar;
+  if(hesap.bakiye >= miktar){
+
+    console.log(`Paranızı alabilirsiniz`);
+  }else {
+    let toplam = hesap.bakiye + hesap.ekHesap;
+
+    if(toplam>=miktar){
+      if(confirm(`Ek hesabınızı kullanmak ister misiniz?`)){
+        console.log(`paranızı alabilirsiniz`);
+        let bakiye = hesap.bakiye;
+        var ekHesap = miktar - bakiye;
+        hesap.bakiye = 0;
+        hesap.ekHesap= hesap.ekHesap - ekHesap;
+
+      }else{
+        console.log(`${hesap.hesapNo} nolu hesabınızda ${miktar} tl bulunmamaktadır.`);
+      } 
+    }else{
+      console.log(`üzgünüz bakiye yetersiz`)
+    }
+  }
+} 
+
+
+paraCek(hesapA, 2000);
+paraCek(hesapA, 3000);
