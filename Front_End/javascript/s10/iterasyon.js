@@ -299,10 +299,22 @@ console.log(lessThan9000);
 //*                 REDUCE METHOD-Azalmak/Küçülmek demek
 //* ======================================================
 
+//todo bir deger döndürüyor. 
+
+const maaslarim  = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
+const maasToplami = maaslarim.reduce((acc, maas) => acc + maas, 0);
+console.log(maasToplami);
+
 const numbers = [1, 2, 3, 4, 5];
 let total4 = numbers.reduce((acc, number) => acc + number, 5); // ? bu 5'i buraya yazmak başlangıç değeri verebiliyoruz. diziyi küçülterek toplam bir değer döndürüyor.
 
 console.log(total4);
+
+//!----------------------------------------------------------
+
+const zamliToplam = maaslarim.filter((maas) => maas <= 9000).map((maas) => Math.trunc(maas *1.1)).reduce((acc, maas) => acc + maas, 0);
+
+console.log(zamliToplam);
 
 const basket = [{
   name : "i phone 8",
