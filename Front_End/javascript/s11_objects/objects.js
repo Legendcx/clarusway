@@ -25,7 +25,7 @@ console.log("===== MERHABA OBJECTS  =========")
 //  const kisi1 = new Personel("1234567890", "Burhan", 20000);
 //  console.log(kisi1)
 
- // object literal (en çok kullanılan yöntemdir.
+ //!-- object literal (en çok kullanılan yöntemdir.------
  
  const worker = {
     name: "can",
@@ -57,8 +57,8 @@ console.log("===== MERHABA OBJECTS  =========")
  const person = worker; // buna sığ/shallow denir. birebir assign etmedir. create(), spread(), concat(), slice(). 
 
  //deep copy 
- let deepCopyWorcer = JSON.parse(JSON.stringify(worker));
- console.log("DEEP:", deepCopyWorcer);
+ let deepCopyWorker = JSON.parse(JSON.stringify(worker));
+ console.log("DEEP:", deepCopyWorker);
 
 
  //*=======================================================
@@ -151,7 +151,7 @@ console.log(Object.entries(people));
 //! FOR - IN
 //* for (key in object) {
 //*   // code block to be executed
-//* }
+//* } özel iteratorlar olduğu için itere ediliyor. biz bunu çok kullanmıyoruz
 
 for (let person in people) {
   console.log(person);
@@ -161,7 +161,7 @@ for (let person in people) {
 //! FOR - OF
 //* for (x of iterable) {
 //*   code block to be executed
-//* }
+//* } for of iterable larla çalışıyor.
 
 for (let key of Object.keys(people)) {
   console.log(key);
@@ -185,3 +185,66 @@ for (let v of Object.values(people)) {
   Object.values(people).forEach((p) => console.log(p.surname));
   Object.values(people).filter((p) => p.job==="developer")
   .forEach((p) => console.log(p.dob));
+
+  //!  -------------------------------
+
+let myArray = [1,2,3,4,5];
+
+let iterator = myArray[Symbol.iterator]();
+
+console.log(iterator.next())
+
+
+//!---------JSON => JAVASCRİPT OBJECT NOTATION
+
+ // array içinde obje var. daha kolay itere edebilmek için bu kullanılmıştır. dizi içerisindeki objelere JSON denir. özellikle de veri ile fronted arasında kullanılıyor. bu formatta veriler gidip geliyor.
+
+ const team = [{
+  name: "Burhan", surname: "Adams", job:"developer", age: 30},
+  {name: "Mary", surname: "Bary", job:"tester", age:22},
+   {name: "Hazal", surname: "Nut", job:"developer", age:20}];
+
+   console.log(team);
+   console.log(team[2]);
+
+   team.forEach((item) => console.log(item.job));
+
+   //* age leri bir artırarak saklayınız.
+
+   const ages = team.map((p) => console.log(p.age + 1));
+
+   //*-----name -surname leri birleştirip buyuk harfe çeviren 
+
+  //  const teamFullName= team.map((p) => ({
+  //   fullName:p.name.toUpperCase() + " " + p.surname.toUpperCase(), 
+  //   age: p.age + 5,
+  //  }));
+
+  //  console.log(teamFullName);
+
+
+  //todo alternatif yöntem bu üstteki için
+  const teamFullName= team.map((p) => {
+    return {
+      fullName:p.name.toUpperCase() + " " + p.surname.toUpperCase(), 
+      age: p.age + 5,
+    }
+  });
+
+   console.log(teamFullName);
+
+
+   //! yaşı 22 den küçük olanları yazdırın
+
+   team.filter((p) => p.age <=22).forEach((p) => console.log(p.name));
+
+
+   //! yaşı 22 den küçük olanlrın dizi olarak çıkarın
+   const teamUnder22 = team.filter((x) => x.age <= 22).map((p) => p.name);
+
+   console.log(teamUnder22);
+
+   //***yaşların ortalamasını alınız. */
+
+   const avgAges = team.reduce((acc, value) => (acc += value.age), 0) / team.length;
+   console.log(avgAges);

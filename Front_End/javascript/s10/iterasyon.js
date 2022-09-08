@@ -293,7 +293,7 @@ console.log(lessThan9000);
  .map((x) => Math.trunc(x * 1.1))
  .forEach((x) => console.log(x));
 
-//* ======================================================
+//
 
 //* ======================================================
 //*                 REDUCE METHOD-Azalmak/Küçülmek demek
@@ -376,3 +376,6 @@ let groupPro = productss.reduce((acc, product) => {
 }, {});
 
 console.log(groupPro);
+
+//!---------------------------------------------
+
