@@ -158,3 +158,45 @@ console.log(pname, job);
 //*======================================================
 //*  SPREAD (...)
 //* ======================================================
+
+//? iterable olanbir elementi bireysel haline getirir.
+//? Spread operatoru ise iterables olan bir elemani bireysel
+//? degerler haline getirir.
+
+const flyingVecihles = ["Aircraft", "Helicopter", "QuadCopter"];
+const automobiles = ["Truck", "Bus", "Car", "SUV"];
+const allWehicles = [...flyingVecihles, ...automobiles];
+//todo yukarıdakine  üç nokta koyarak her elemanı ayırdı.
+console.log(allWehicles);
+
+//Example:
+const fruits = ["apple", "banana", "grap", "pear"];
+const citrus = ["orange", ...fruits, "lime", "chery", ]
+//ARRAY concatination olarak kullandık
+console.log(citrus);
+
+//** STRİNGİ 
+
+let str = "Hello FS12";
+console.log([...str]);
+const charArray = [...str];
+console.log(charArray, str);
+
+//MAX() FONKSİYONU
+
+console.log(Math.max(1,3,5,2,10));
+const nums = [1,3,5,2,10]; // listeyi  stringe çeviriyor.
+console.log(Math.max(...nums));
+
+//ARRAY COPY
+
+const myNumbers = [1,2,3];
+const herNumber = [-1, ...myNumbers, 7]
+console.log(herNumber)
+
+// Object copy
+
+const myObject = {a:1, b:2, c:3};
+const herObj = {z:10, m:45, y:78}
+const copyABC = {...myObject, ...herObj};
+console.log(copyABC);

@@ -12,6 +12,13 @@
 // Notes
 // The input array will always contain only positive numbers, and will never be empty or null.
 
+const rootOrSquare = (arr) =>{
+// return arr.map((item) => (item**0.5)%1 ==0 ? item**0.5 : item**2) 
+return arr.map((item) => Number.isInteger(item**0.5) ? item**0.5 : item**2) 
+}
+
+console.log(rootOrSquare([4,3,9,7,2,1]));
+
 //*******************************QUESTION 2********************************************/
 
 // JavaScript Arrays support a filter function (starting in JavaScript 1.6). Use the filter functionality to complete the function given.
@@ -20,6 +27,13 @@
 
 
 // console.log(getEvenNumbers([2,3,8,9,4,5,6]));
+
+const getEvenNumber = (arr) => {
+    return arr.filter((item) => item % 2 == 0)
+}
+
+console.log(getEvenNumber([2,3,8,9,4,5,6]));
+
 
 //*******************************QUESTION 3********************************************/
 
@@ -32,6 +46,15 @@
 // input:[-3,-5,1,-87]
 // output:1
 
+const sumOfPositives = (arr) => {
+    return arr.reduce((sum,item) => sum+(item>0 ? item :0));
+    // return arr.filter((item) => item>0).reduce((sum, item) => sum+=item,0);
+
+}
+
+
+console.log(sumOfPositives([1,3,-5,12,4,-21,3,-2]));
+
 // *******************************QUESTION 4********************************************/
 
 // Write a function that takes an integer as input, 
@@ -39,6 +62,31 @@
 //  You can guarantee that input is non-negative.
 
 // Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
+
+const countBits = (num) => {
+    let binary = num.toString(2)
+    console.log(binary);
+    binary.split("1");
+    return binary.split("1").length-1
+
+}
+
+console.log(countBits(1234));
+
+//-------------------------
+const countBit = (num) => {
+    let binary = num.toString(2)
+    // return binary.match(/1/g).length
+    // return binary.split("").filter((item) => item==1).length
+    let count =0;
+    console.log(binary);
+    binary.split("");
+    return binary.split("").map((item) => item ==1 && count++)
+    return count
+
+}
+
+console.log(countBit(1234));
 
 
 // *******************************QUESTION 5*******************************************/
@@ -61,21 +109,55 @@
 // Since the sum of its digits' factorial of 1! + 5! + 0! = 122 is not equal to number itself, Then it's Not Strong .
 
 
+function calcFactorial(n) {
+    let factorial = 1;
+    for (let i = 2; i <= n; i++) factorial *= i;
+    return factorial;
+}
+function strongNumber(n) {
+    return n
+        .toString()
+        .split("")
+        .reduce((total, elem) => total + calcFactorial(elem), 0) == n
+        ? "STRONG!!!!"
+        : "Not Strong !!";
+
+
+console.log(calcFactorial(145));
+
+
+
 //************************************************************QUESTION 6***************************** */
 // Complete the solution so that it splits the string into pairs of two characters.
 //  If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
 // Examples:
 // * 'abc' =>  ['ab', 'c_']
 // * 'abcdef' => ['ab', 'cd', 'ef']
+
+function splitTwo(str) {
+    const result = [];
+    for (let i = 0; i < str.length; i += 2) {
+        result.push(str[i] + (str[i + 1] ? str[i + 1] : "_"));
+    }
+    return result;
+}
+
+   console.log(splitTwo("abcdef"));
+
 //************************************************************QUESTION 7***************************** */
 //Write a function to accept two arrays. Does the first array contain all elements represented in the second array?
 
 // const containsAllElements = (firstArray, secondArray) => {
 //     // your code
-// }
 
 // console.log(containsAllElements(["monday", "tuesday"], ["tuesday"])) // false
 // console.log(containsAllElements([1,2,3,4,5,6,78,9,], [1,2,3,5]))  //true
+
+function containsAllElements(firstArray, secondArray) {
+    return secondArray.every((elem) => firstArray.includes(elem));
+}
+
+
 
 //************************************************************QUESTION 8***************************** */
 //Write a function that accepts an array as a parameter and returns the first item that smaller than the average of its elements
@@ -84,10 +166,10 @@
 //     // your code
 // }
 
+function smallerThanAvg(arr) {
+    const avg = arr.reduce((total, elem) => total + elem, 0) / arr.length;
 
+    return arr.find((elem) => elem < avg);
+}
 
-
-
-
-
-
+smallerThanAvg([1,2,3,4]);
