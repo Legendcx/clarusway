@@ -13,19 +13,19 @@ The start number will always be smaller than the end number. Both numbers can be
 
 //!--SOLUTION
 
-function dontGiveMeFives(start, end){
-    let count = 0;
+// function dontGiveMeFives(start, end){
+//     let count = 0;
 
-    for(let i = start; i <=end; i++){
-        if(i.toString().includes(5)) {
-            count++;
-        }
-    }
-    return count;
-}
+//     for(let i = start; i <=end; i++){
+//         if(i.toString().includes(5)) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
 
-console.log(dontGiveMeFives(1,9));
-console.log(dontGiveMeFives(4,17));
+// console.log(dontGiveMeFives(1,9));
+// console.log(dontGiveMeFives(4,17));
 
 //!--- SORU 2 -----------------------
 
@@ -39,12 +39,12 @@ Input: 123456789 Output: 987654321
 
 
 // return + ""; String(n) de diyebiliriz.
-function descendingOrder (n) {
-    return Number(n.toString().split('').sort((a,b) => b -a).join(''));
-}
+// function descendingOrder (n) {
+//     return Number(n.toString().split('').sort((a,b) => b -a).join(''));
+// }
 
-console.log(descendingOrder(42145));
-console.log(descendingOrder(46845));
+// console.log(descendingOrder(42145));
+// console.log(descendingOrder(46845));
 
 
 
@@ -57,15 +57,15 @@ Indices in sequence start from 0.
 If the sequence is empty, you should return 0.
 */
 
-function evenLast(numbers) {
-    return numbers.length 
-    ? numbers.reduce((acc, y, z) => acc + (z % 2 ? 0 : y), 0) * numbers[numbers.length -1] 
-    : 0; 
+// function evenLast(numbers) {
+//     return numbers.length 
+//     ? numbers.reduce((acc, y, z) => acc + (z % 2 ? 0 : y), 0) * numbers[numbers.length -1] 
+//     : 0; 
 
     
-}
+// }
 
-console.log(evenLast([1,2,3,4,5]));
+// console.log(evenLast([1,2,3,4,5]));
 
 //! QUESTION-4
 /*
@@ -78,12 +78,12 @@ uniqueInOrder([1,2,2,3,3,3])       == [1,2,3]
 
 //? solution---------------------------
 
-function uniqueInOrder(iterable){
-    return [...iterable].filter((el, i, arr) => el !== arr[i+1]);
+// function uniqueInOrder(iterable){
+//     return [...iterable].filter((el, i, arr) => el !== arr[i+1]);
 
-}
+// }
 
-console.log(uniqueInOrder(AAAABBBCCDAABBB));
+// console.log(uniqueInOrder(AAAABBBCCDAABBB));
 
 
 
@@ -106,18 +106,30 @@ combine(objA, objB) // Returns { a: 13, b: 20, c: 36, d: 3 }
 
 //!   ---   SOLUTION    -----          
 
-const objA = { a: 10, b: 20, c: 30 }
-const objB = { a: 3, c: 6, d: 3 }
-const objC = { a: 5, d: 11, e: 8 }
-const objD = { c: 3 }
+// const objA = { a: 10, b: 20, c: 30 }
+// const objB = { a: 3, c: 6, d: 3 }
+// const objC = { a: 5, d: 11, e: 8 }
+// const objD = { c: 3 }
 
-function combine (...obj) {
-    let result = {}
+// function combine (...obj) {
+//     let result = {}
 
-    for(const x of obj){
-        for(const hey of Object.entries())
-    }
-    return result;
-}
+//     for(const x of obj){
+//         for(const hey of Object.entries())
+//     }
+//     return result;
+// }
 
-console.log(combine(objA, objB));
+// console.log(combine(objA, objB));
+
+let fullStack = {
+    languages: ["JavaScript", "React", "HTML"],
+    jira: true,
+    gitHub: true,
+    difficulty: 8,
+   }
+
+   
+//    
+
+console.log(Object.keys(fullStack));

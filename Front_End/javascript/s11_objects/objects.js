@@ -75,6 +75,11 @@ console.log("===== MERHABA OBJECTS  =========")
     calculateAge: function(){
         return new Date().getFullYear() - this.dob;
     },
+
+
+  
+
+      
     //todo = arrow function lar this leri oratadan kaldırmak için yapılmıştır.
     //! NOT: arrow fonksiyonlari ozellikle callback fonksiyonu olarak
 //! kullanilmak ve bu fonksiyonlarda this keyword kullanim

@@ -19,9 +19,50 @@
 }
 /*! ------------- 2- CAROUSEL --------------- */
 
+.carousel-item{
+    max-height: calc(100vh - 88px);
+}
+.carousel-item h5{
+color: var(--red);
+font-size: 2.5rem;
+text-shadow: 2px 2px 2px black;
+}
+
+.carousel-item p{
+    text-shadow: 3px 3px 3px black;
+    font-weight: 600;
+}
+
+.carousel-item .btn {
+    width: 7rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-indicators button {
+    background-color: var(--red) !important;
+    height: 0.4rem !important;
+     width: 3rem !important;
+     margin-right: 0.5rem !important;
+}
+
+.carousel-caption{
+    bottom: 5rem;
+}
 /*! ------------ 3- ABOUT SECTION ----------- */
 
 /*! ------------- 4- INSTRUCTORS -------------*/
+section#instructors .card{
+    transition: transform 0.5s;
+}
+
+section#instructors .card:hover{
+    transform: scale(1.05);
+    transition: opacity
+}
+section#instructors 
+
+
+
 
 /*! ----------- 4- STUDENTS SECTION ----------*/
 
