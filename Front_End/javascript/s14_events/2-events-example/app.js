@@ -12,7 +12,10 @@ langList.appendChild(newUl);
 //? addBtn event handler
 addBtn.addEventListener("click", () => {
   if (!langInput.value) {
-    alert("Please enter a language");
+    alert("Please enter a language"); // noah hocanın verdiği ödev burda daha resposive nasıl yapılır bulamadım.
+  }else if (langInput.value === "javascript"){
+    newUl.innerHTML += `<li class = "text-danger"> ${langInput.value}</li>`;
+    langInput.value = "";
   } else {
     newUl.innerHTML += `<li>${langInput.value}</li>`;
     langInput.value = "";
@@ -29,10 +32,10 @@ deleteBtn.addEventListener("click", () => {
 
 //? enter key and  del key event handler
 langInput.addEventListener("keydown", (event) => {
-  // console.log(event);
-  // console.log(event.target);
-  // console.log(event.keyCode);
-  // console.log(event.code);
+  console.log(event);
+  console.log(event.target);
+  console.log(event.keyCode);
+  console.log(event.code);
 
   if (event.keyCode === 13) {
     addBtn.click();

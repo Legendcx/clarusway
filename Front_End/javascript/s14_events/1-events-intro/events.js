@@ -5,10 +5,10 @@
 console.log("****** EVENTS *******");
 
 //!fonksiyondan farkı , fonksiyonu biz çağırıyoruz. ama events ları bizim yardımımızla browserlar çağırıyor. Javascriptin responsive olmanı sağlayan şey bu eventslardır.
-//todo örenek olarak:  onclick, onload, onmouseover, onmouseout, onsubmit, onchenged, onkeyup bunlar HTML olaylarına örnektir.
+//todo örnek olarak:  onclick, onload, onmouseover, onmouseout, onsubmit, onchenged, onkeyup bunlar HTML olaylarına örnektir.
 
-//? en önemli özellik başka bir js dosyası ile events tanımlamak. amma biz 4. yol olan addEventListener() metodu ile js kodunda olau tanımlamak. 
-//! element.addEventsListener(olay, fonksiyon) burada önemli olna şey events in önünde (on) kelimesi yoktur.
+//? en önemli özellik başka bir js dosyası ile events tanımlamak. amma biz 4. yol olan addEventListener() metodu ile js kodunda olay tanımlayacağız 
+//! element.addEventsListener(olay, fonksiyon) burada önemli olan şey events in önünde (on) kelimesi yoktur.
 
 //* EXAMPLE-1 (Mouse Over, Mouse Out )
 //* ----------------------------------
@@ -16,13 +16,13 @@ const h1 = document.querySelector("#header h1");
 
 h1.onmouseover = function (){
     h1.style.color = "red";
-    h1.style.fontweight = "red";
+    h1.style.fontWeight = "600";
 
 };
 
 h1.onmouseout = () => {
 h1.style.color = "black";
-h1.style.fontweight = "300";
+h1.style.fontWeight = "100";
 }
 
 //*4 Method la ilgili bir örenek yaptık
