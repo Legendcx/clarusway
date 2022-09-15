@@ -1,0 +1,58 @@
+/******** SHAKE *******/
+div{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+div i{
+    font-size: 10rem;
+    color: purple;
+
+}
+
+.fa-bell:hover{
+    animation-name: shake;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+
+.fa-dollar-sign{
+    animation: snake 0.2s ease-in-out infinite alternative forwards;
+}
+
+.fa-dollar-sign:hover{
+    animation-play-state: running;
+
+}
+
+
+@keyframes shake {
+    0%{
+        transform: rotate(20deg);
+    }
+
+    50%{
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+@keyframes snake {
+    from{
+        transform: skew(30deg);
+    }
+
+    to{
+        transform: skew(-30deg);
+    }
+}

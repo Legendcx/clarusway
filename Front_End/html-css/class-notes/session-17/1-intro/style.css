@@ -1,0 +1,63 @@
+/******* ANIMATION INTRO *******/
+
+
+.outer {
+    background-color: blueviolet;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.inner {
+    background-color: cadetblue;
+    width: 50%;
+    height: 50%;
+    transition: transform 1s ease-in-out, backgroundcolor 1s;
+}
+
+.inner:hover{
+    background-color: chartreuse;
+    transform: translateX(100%);
+
+
+    animation: travel 1s ease-in-out;
+
+    /* Animasyon tekrarı :  */
+    /* animation-iteration-count: 2; */
+
+    /* animasyon yönü : animasyonun başlangıç yönü*/
+    /* animation-direction: alternate; */
+
+    /* animasyon dldurma : forwars:animasyon son frame bitiyor
+    backword: geri aynı yerre geliyor*/
+
+    animation-fill-mode: forwards;
+
+    /* animasyon delay: animasyonun gecikmesini yapar //
+    negatif değerler süreyi siliyor. */
+    animation-delay: 5s;
+
+    /* bu da animasonun shorthands yöntemidir.  */
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    
+}
+
+
+/*?animasyon noktalarının ve zamanlarının tanımlanmasını sağlar
+*/
+@keyframes travel {
+    0% {
+        transform: translateX(0);
+    }
+    /* başlangıca göre 100birim aşağısı */
+    33% {
+        transform: translateY(100%);
+    }
+
+    66%{
+        transform: translate(100%, 100%);
+    }
+    100%{
+        transform: translate(100%);
+    }
+}
