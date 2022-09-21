@@ -1,4 +1,4 @@
-// console.log("***** SELECTORS *****");
+console.log("***** SELECTORS *****");
 
 // //*===========================================
 // //*            GETELEMENTBYID()
@@ -15,7 +15,7 @@
 // //* EXAMPLE-2
 // //*-------------------------------------------
 
-// const input = document.getElementById("myInput");
+// const myInput = document.getElementById("input");
 // const button = document.getElementById("btn");
 // button.style.background = "black";
 // button.style.color = "white";
@@ -146,7 +146,7 @@ button.style.border = "none";
 button.style.borderRadius = "10px";
 button.style.padding = "1rem";
 button.style.fontSize = "1.1rem";
-myInput.style.padding = "1rem";
+// myInput.style.padding = "1rem";
 
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
@@ -208,7 +208,7 @@ itemList.style.background = "grey";
 
 //? 3- queryselector() id secebilir.
 const input = document.querySelector("#input");
-console.log(input.value);
+// console.log(input.value);
 
 document.querySelector("#btn").style.cursor = "pointer";
 

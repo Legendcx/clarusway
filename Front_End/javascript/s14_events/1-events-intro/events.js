@@ -5,7 +5,7 @@
 console.log("****** EVENTS *******");
 
 //!fonksiyondan farkı , fonksiyonu biz çağırıyoruz. ama events ları bizim yardımımızla browserlar çağırıyor. Javascriptin responsive olmanı sağlayan şey bu eventslardır.
-//todo örnek olarak:  onclick, onload, onmouseover, onmouseout, onsubmit, onchenged, onkeyup bunlar HTML olaylarına örnektir.
+//todo örnek olarak:  onclick, onload, onmouseover, onmouseout, onsubmit, onchenge, onkeyup bunlar HTML olaylarına örnektir.
 
 //? en önemli özellik başka bir js dosyası ile events tanımlamak. amma biz 4. yol olan addEventListener() metodu ile js kodunda olay tanımlayacağız 
 //! element.addEventsListener(olay, fonksiyon) burada önemli olan şey events in önünde (on) kelimesi yoktur.
@@ -38,12 +38,18 @@ h1.addEventListener('click', ()=> {
 //* -------------------------------------------------
 document.getElementById("btn").addEventListener("click", function(){
     const input = document.querySelector("#input")
-    if(!input.value){
-        alert("Please enter an item")
-    } else{
-        alert(`${input.value} entered`);
-    }
-    input.value = "";
+    // if(!input.value){
+    //     alert("Please enter an item")
+    // } else{
+    //     alert(`${input.value} entered`);
+    // }
+    // input.value = "";
+
+    !input.value 
+    ? alert("Please enter a item")
+    : alert (`${input.value} entered`);
+
+    input.value = ""; // yazılan veriyi geri silmek için
 });
 
 // !input.value ? alert("Please enter an item") :   alert(`${input.value} entered`); burası ternary yöntemi ile yapılır.
