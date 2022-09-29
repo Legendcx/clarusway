@@ -50,7 +50,7 @@ function Book(title, author, year) {
     Book.prototype.price = 100;
     // book1.price = 100;
 
-    //* Ornegin Book nesnesinin tum instance'lari getAge() fonksiyonunu miras alabilir.
+//* Ornegin Book nesnesinin tum instance'lari getAge() fonksiyonunu miras alabilir.
 //* Ancak, getAge() fonksiyonu bellekte sadece bir yer kaplamaktadir.
 //* Bir nesnenin prototiplerine .prototype ile erisilebilir.
 //* Ancak bir instance'in prototiplerine .__proto__ ile erisilmektedir.
@@ -62,3 +62,28 @@ function Book(title, author, year) {
     console.log(book1)
     console.log(book2);
 
+
+//?INHERİTANCE (Kalıtım - ES5)
+//?-----------------------------------------------------
+
+//todo sub-class yazma da deniyor. yukarıdaki book class ında inherit ettik buraya yeni bir class oluşturduk.
+
+
+function Magazine(title, author, year, month){
+    Book.call(this, title, author, year);
+    this.month = month;
+}
+
+//* Prototip leri miras olarak almak için Object.create() metodu ile alabiliriz.
+Magazine.prototype = Object.create(Book.prototype);
+
+//! magazin class ının yeni bir insteance si dir.
+const mag1 = new Magazine("Scientific Research", "Einstein", 1926, "Sep");
+
+console.log(mag1);
+
+// prototype ler doğruda miras gelmiyor.
+console.log(mag1.getSummary());
+console.log(mag1.getAge());
+
+// !prototyp tabanlı dillerde bir şeyi devamlı yazmak yerine bir kere yazıp daha oradan inheritance etmek daha fonksiyoneldir. prototype global tabanlı oluyor ve daha az kod yazıyoruz.
