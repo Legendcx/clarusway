@@ -25,9 +25,8 @@ function Book(title, author, year) {
   //? Constructor ise Book nesnesinden bir ornek (instance) olusturmaktadir.
   //? Constructor, mantiksal bir ifade iken instance fiziksel bir olusum gibi dusunulebilir.
   //? Contructor'da tanimlanmis tum degisken ve fonksiyonlar olusturulan
-
-
   //? her bir instance'da hayat bulmus olur.
+
   const book1 = new Book("Kasagi", "Omer Seyfettin", 1920);
   const book2 = new Book("Sinekli Bakkal", "H. Edip Adıvar", 1930);
 
@@ -55,7 +54,8 @@ function Book(title, author, year) {
 //* Bir nesnenin prototiplerine .prototype ile erisilebilir.
 //* Ancak bir instance'in prototiplerine .__proto__ ile erisilmektedir.
 
-    console.log(Book.prototype)
+    console.log(Book.prototype);
+    //!Aşağıda bir instance ve onun prototype görmek için aşağıdaki gibi yazıyoruz.Burası global alan oluyor burası
     console.log(book1.__proto__);
 
     console.log(book1.getSummary());
@@ -74,7 +74,7 @@ function Magazine(title, author, year, month){
     this.month = month;
 }
 
-//* Prototip leri miras olarak almak için Object.create() metodu ile alabiliriz.
+//* prototyhpe ler miraz olarak gelmiyor. (ES6 da direkt geliyor.)Prototip leri miras olarak almak için Object.create() metodu ile alabiliriz.
 Magazine.prototype = Object.create(Book.prototype);
 
 //! magazin class ının yeni bir insteance si dir.
@@ -86,4 +86,5 @@ console.log(mag1);
 console.log(mag1.getSummary());
 console.log(mag1.getAge());
 
-// !prototyp tabanlı dillerde bir şeyi devamlı yazmak yerine bir kere yazıp daha oradan inheritance etmek daha fonksiyoneldir. prototype global tabanlı oluyor ve daha az kod yazıyoruz.
+// ! PROTOTYPE TABANLI DİLLERDE AMAÇ BELLEĞİ ETKİN KULLANMAKATIR. ÖZELLİKLE SÜREKLİ YAZILAI GEREKEN DEĞİŞKEN OBJELERİ TEKRAR TEKRAR YAZMAK YERİNE  BİR KERE YAZIP BUNU GLOBAL ALNADAN ÇEKMEK İÇİN KULLANDIĞIMIZ BİR YAPIDIR.
+//* prototyp tabanlı dillerde bir şeyi devamlı yazmak yerine bir kere yazıp daha oradan inheritance etmek daha fonksiyoneldir. prototype global tabanlı oluyor ve daha az kod yazıyoruz.

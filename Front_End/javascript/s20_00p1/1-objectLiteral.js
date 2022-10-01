@@ -33,3 +33,10 @@ console.log(book2.getSummary());
 //?object literal yöntemi ile fazla sayıda objeler oluşturmak oldukça zahmetlidir. ayrıca çok tekrar içeriyor.
 //? çözüm Object Oriented Programming;,
 
+let Storm = function () {};
+Storm.prototype.precip = 'rain';
+let WinterStorm = function () {};
+WinterStorm.prototype = new Storm();
+WinterStorm.prototype.precip = 'snow';
+let bob = new WinterStorm();
+console.log(bob.precip);

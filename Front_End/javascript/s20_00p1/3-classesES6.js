@@ -18,7 +18,7 @@ class Book {
     this.author = author;
     this.year = year;
 
-    //?bu alanda yazılan bir metod bütün insteance lerin belleğinde yer kaplar. hepsinde olur. burası global alnadır.
+    //?bu alanda yazılan bir metod  VEYA FONKSİYONLAR  bütün insteance lerin belleğinde yer kaplar. hepsinde olur. burası global alnadır.
     this.getTitle = function(){
         return this.title;
     }
@@ -40,14 +40,16 @@ console.log(book1.getSummary());
 //?sub-class (inheritance) tanımlaması ES6 da nasıl olur ÖRNEK:::
 //-----------------------------------------------------
 
-class Magazin extends Book {
+class Magazine extends Book {
     constructor(title, author, year, month){
         //!super diyerek BOOk'un constructor unun çağırdık burada..
-        super(title, author, year)
+        super(title, author, year)//*yapınca book'un prototype iin almış oluyoruz.
         this.month = month;
     }
 }
 
+
+//TODO YENİ İNSTANCE OLUŞTURUYORUZ
 const mag1 = new Magazine("pcNet", "Burhan", 2005, "Sep");
 console.log(mag1);
 
