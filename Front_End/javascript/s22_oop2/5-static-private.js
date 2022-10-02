@@ -30,7 +30,7 @@ class Book {
     //?private bir deişken oluşturdum.
     #id ;
     //?static değişken tanımlaması. bir static clası oluşturursak sadece o class üzerinde erişilebilir.
-    //? intance lerden bağımsız bir metod lazımsa static yapmalıyız.
+    //? instance lerden bağımsız bir metod lazımsa static yapmalıyız.
     static counter= 0;
 
     constructor(title, author, year) {
