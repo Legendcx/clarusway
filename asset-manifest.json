@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Legendcx/my_projects/static/css/main.1752aa58.css",
+    "main.js": "/Legendcx/my_projects/static/js/main.ec915cc5.js",
+    "static/js/787.6c3fad03.chunk.js": "/Legendcx/my_projects/static/js/787.6c3fad03.chunk.js",
+    "index.html": "/Legendcx/my_projects/index.html",
+    "main.1752aa58.css.map": "/Legendcx/my_projects/static/css/main.1752aa58.css.map",
+    "main.ec915cc5.js.map": "/Legendcx/my_projects/static/js/main.ec915cc5.js.map",
+    "787.6c3fad03.chunk.js.map": "/Legendcx/my_projects/static/js/787.6c3fad03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1752aa58.css",
+    "static/js/main.ec915cc5.js"
+  ]
+}
