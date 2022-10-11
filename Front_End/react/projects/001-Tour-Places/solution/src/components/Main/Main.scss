@@ -1,0 +1,59 @@
+@import "../../scss/variables";
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .cards{
+        background-color: grey;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .title{
+        color: white;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    img{
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+        &:hover{
+            filter: grayscale(100%);
+        }
+        
+    }
+
+    .card-over{
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 1.5rem;
+        background-color: rgba(0,0,0,0.4);
+        padding: 1rem;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
