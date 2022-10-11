@@ -6,11 +6,16 @@
     justify-content: space-evenly;
 
     .cards{
-        background-color: grey;
+        background-color: rgb(44, 32, 32);
         margin: 1rem;
         padding: 1rem;
         border-radius: 10px;
         position: relative;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+        overflow: hidden;
+        &:hover .card-over{
+            transform: translateY(0);
+        }
     }
 
     .title{
@@ -37,6 +42,9 @@
         font-size: 1.5rem;
         background-color: rgba(0,0,0,0.4);
         padding: 1rem;
+        transform: translateY(100%);
+        z-index: 1;
+        transition: transform 0.7s ease-in-out;
     }
     
 
