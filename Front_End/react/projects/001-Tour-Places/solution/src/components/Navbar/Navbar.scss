@@ -2,15 +2,18 @@
 
 
 .navbar{
-    background-color: $cardNavBgColor;
+    // background-color: $cardNavBgColor;
+    background-color: rgb(44, 32, 32);
     display: flex;
     justify-content: space-evenly;
+    // font-size: 2rem;
+    font-family: 'Macondo Swash Caps', cursive;
 }
 
 a {
     color: $backgroundColor;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.6rem;
     padding: 1rem;
     &:hover {
         background-color: $backgroundColor;
