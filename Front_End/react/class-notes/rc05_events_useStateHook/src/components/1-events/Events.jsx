@@ -8,44 +8,53 @@
 //? bir sarmalayici (Wrapper) arabirimle ortulmesi ile olusur. Bu sayede,
 //? React ortaminda kullanilan event'larin bilindik tarayicilarda
 //? sorunsuz calismasini saglanir.
+
 //? Ayrinti icin : https://reactjs.org/docs/events.html
 
-
 const Events = () => {
+  let message = "EVENT BASED PROGRAM";
 
-    let  message= "EVENT BASED PROGRAM";
+  const handleClick = () => {
+    alert("Btn Clicked");
+  };
+  const handleClear = (msg) => {
+    alert(msg);
+  };
 
-    const handleClick = () =>{
-        alert("Btn Clicked");
-    }
-
-    const handleClear = (msg) =>{
-        alert(msg);
-    }
-
-    const handleChange = (e) =>{
-        console.log(e.target);
-
-        message = "REACT";
-        console.log(message);
-    }
+  const handleChange = (e) => {
+    console.log(e.target);
+    message = "REACT";
+    console.log(message);
+  };
 
   return (
     <div className="container text-center mt-4">
+      <h1>{message}</h1>
+      <button onClick={handleClick} className="btn btn-success">
+        Click
+      </button>
 
-        <h1>{message}</h1>
-        <button onClick={handleClick} className="btn btn-success">Click</button>
+      {/* Eger bir event fonksiyonunun paremetresi olmasi gerekiyorsa
+      bu fonksiyon bir arrow fonks. tarafindan  cagrilmalidir. Aksi
+      takdirde event fonksiyonu event gerceklesmeden cagirilir */}
+      <button
+        onClick={() => handleClear("Clear Btn Clicked")}
+        className="btn btn-dark"
+      >
+        Clear
+      </button>
 
-        <button onClick={() => handleClear("Clear Btn Clicked")} className="btn btn-dark">Clear</button>
-
-        <button onClick={handleChange} className="btn btn-danger">Change</button>
-        {/* <button onClick={(e) => handleChange(e)} className="btn btn-danger">Change</button> */}
+      <button onClick={handleChange} className="btn btn-danger">
+        Change
+      </button>
+      {/* <button onClick={(e) => handleChange(e)} className="btn btn-danger">
+        Change
+      </button> */}
     </div>
   );
 };
 
 export default Events;
-
 
 //! message console'da guncellendigini ancak DOM'da guncellenmedigini gorduk.
 //* Bunun sebebi REACT'in aksi belirtilmedigi surece elementleri
