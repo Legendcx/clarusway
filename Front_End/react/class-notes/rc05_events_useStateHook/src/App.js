@@ -5,9 +5,9 @@ import UseStateCounter from "./components/3-useStateHook/UseStateCounter";
 function App() {
   return (
     <div>
-      {/* <Events />
-      <Counter />
-      <Counter count={5} /> */}
+      {/* <Events /> */}
+      {/* <Counter /> */}
+      {/* <Counter count={5} />  */}
       <UseStateCounter />
     </div>
   );
