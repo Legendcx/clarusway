@@ -79,6 +79,8 @@ const UseStateCounter = () => {
           DEC
         </button>
       </section>
+
+      
       <section>
         <h1>USESTATE OBJECT</h1>
         <h2>{person.name}</h2>
