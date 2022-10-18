@@ -22,6 +22,7 @@ const User = () => {
       <h1>
         {/* Optional Chaining */}
         {/* name?.first?.second */}
+        //! aşağıdaki gibi optional Chaining yönemini uyguluyoruz.
         {name?.first} {name?.last}
       </h1>
       <img className="rounded-circle" src={picture?.large} alt="img" />
