@@ -32,7 +32,7 @@ const Home = () => {
       <Button 
       onClick={()=>{toggle()}}
       variant="danger">{text}</Button>
-      { isOpen && <AddTask/>}
+      { isOpen && <AddTask getTask={getTask}/>}
      
       <TaskList task={task}/>
     </div>
