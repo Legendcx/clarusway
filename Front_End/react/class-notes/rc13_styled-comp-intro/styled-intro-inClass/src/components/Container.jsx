@@ -8,7 +8,7 @@ background: ${({bg}) => bg || "white"};
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.7rem;
   padding: 1rem;
  
   

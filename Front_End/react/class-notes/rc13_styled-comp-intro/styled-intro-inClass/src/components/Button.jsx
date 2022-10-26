@@ -12,7 +12,7 @@ width: 8rem;
 padding: 1rem 2rem;
 border-radius: 0.5rem;
 border-color: purple;
-font-size: 1.1rem;
+font-size: 1.2rem;
 font-family: 'Segoe UI', sans-serif;
 &:hover{
   transform: scale(0.97);

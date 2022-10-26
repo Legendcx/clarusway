@@ -13,7 +13,7 @@ const App = () => {
       <TomatoButton primary>Send</TomatoButton>
       <TomatoButton >Burhan</TomatoButton>
     </Container>
-    <Container bg="#eea">
+    <Container bg="#bea">
       <StyledLink href="https://clarusway.com/" target="_blank">Clarusway</StyledLink>
       <StyledLink secondary href="https://google.com/" target="_blank">Google<StyledLink/>
 
