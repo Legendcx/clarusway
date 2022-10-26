@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 export const Button = styled.button`
 /* background-color: hotpink; */
-background-color: ${(props) => (props.primary ? "white" : "purple")};
+background-color: ${(props) => (props.primary ? "purple" : "white")};
 /* background-color: ${(props) => (props.primary ? "purple" : "white")}; */
-background-color: ${({primary}) => (primary ? "purple" : "white")};
+background-color: ${({primary}) => (primary ? "purple" : "aqua")};
 color: white;
 cursor: pointer;
 width: 8rem;
@@ -21,7 +21,7 @@ font-family: 'Segoe UI', sans-serif;
 
 export const TomatoButton = styled(Button)`
   background-color: ${(props) => (props.primary ? "tomato" : "red")};
-  background-color: ${(props) => (props.primary ? "yellow" : "green")};
+  background-color: ${(props) => (props.primary ? "red" : "green")};
   border-color: tomato;
 
 `

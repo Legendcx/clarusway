@@ -9,9 +9,9 @@ const App = () => {
     <Container bg="grey">
       <HeaderText color="hotpink">STYLED COMPONENTS</HeaderText>
       <Button primary>Save</Button>
-      <Button primary >Clear</Button>
+      <Button >Clear</Button>
       <TomatoButton primary>Send</TomatoButton>
-      <TomatoButton primary>Burhan</TomatoButton>
+      <TomatoButton >Burhan</TomatoButton>
     </Container>
     <Container bg="#eea">
       <StyledLink href="https://clarusway.com/" target="_blank">Clarusway</StyledLink>
