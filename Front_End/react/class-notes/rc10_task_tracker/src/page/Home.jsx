@@ -12,7 +12,7 @@ const Home = () => {
 
   const toggle=()=>{
     setIsOpen(!isOpen);
-    const buttonText=isOpen ? "Show Task Bar" : "Hide Task Bar"
+    const buttonText=isOpen ? "SHOW Task Bar" : "HIDE Task Bar"
     setText(buttonText);
   }
 

@@ -33,21 +33,21 @@ const AddTask = ({getTask}) => {
   return (
     <div>
       <Form onSubmit={handleSubmit}>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Task</Form.Label>
+      <Form.Group className="my-3 text-end" controlId="formBasicEmail">
+        <Form.Label>TASK</Form.Label>
         <Form.Control type="text"
          placeholder="Enter task" 
          onChange={(e)=>setTask(e.target.value)}/>
       </Form.Group>
 
       
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Date</Form.Label>
+      <Form.Group className="mb-3 text-end" controlId="formBasicPassword">
+        <Form.Label>DATE</Form.Label>
         <Form.Control type="date" 
         onChange={(e)=>setDate(e.target.value)}/>
       </Form.Group>
     <div className="text-center">
-      <Button variant="primary w-50 " type="submit">
+      <Button variant="primary w-25 " type="submit">
         SAVE
       </Button>
       </div>
