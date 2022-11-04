@@ -35,7 +35,7 @@ const Courses = () => {
           return (
             <Col className="col d-flex justify-content-center" key={id}>
               <Card style={{ width: "18rem" }}>
-                <Card.Img variant="top" src={img} />
+                <Card.Img variant="top" src={img} className="p-4" />
                 <Card.Body>
                   <Card.Title>{name}</Card.Title>
                   <Card.Text>{text}</Card.Text>
