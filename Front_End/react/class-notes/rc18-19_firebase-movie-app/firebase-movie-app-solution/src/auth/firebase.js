@@ -2,9 +2,12 @@ import { initializeApp } from "firebase/app";
 import {
   createUserWithEmailAndPassword,
   getAuth,
+  GoogleAuthProvider,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 
 //* Your web app's Firebase configuration
@@ -26,7 +29,7 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 
-export const createUser = async (email, password, navigate) => {
+export const createUser = async (email, password, navigate, displayName) => {
   //? yeni bir kullanıcı oluşturmak için kullanılan firebase metodu
   try {
     let userCredential = await createUserWithEmailAndPassword(
@@ -34,6 +37,10 @@ export const createUser = async (email, password, navigate) => {
       email,
       password
     );
+    //? kullanıcı profilini güncellemek için kullanılan firebase metodu
+    await updateProfile(auth.currentUser, {
+      displayName: displayName,
+    });
     navigate("/");
     console.log(userCredential);
   } catch (error) {
@@ -53,12 +60,15 @@ export const signIn = async (email, password, navigate) => {
   }
 };
 
-export const userObserver = () => {
+export const userObserver = (setCurrentUser) => {
   //? Kullanıcının signin olup olmadığını takip eden ve kullanıcı değiştiğinde yeni kullanıcıyı response olarak dönen firebase metodu
   onAuthStateChanged(auth, (user) => {
     if (user) {
+      const { email, displayName, photoURL } = user;
+      setCurrentUser({ email, displayName, photoURL });
       console.log(user);
     } else {
+      setCurrentUser(false);
       console.log("user signed out");
     }
   });
@@ -66,4 +76,24 @@ export const userObserver = () => {
 
 export const logOut = () => {
   signOut(auth);
+};
+
+//* https://console.firebase.google.com/
+//* => Authentication => sign-in-method => enable Google
+//! Google ile girişi enable yap
+//* => Authentication => settings => Authorized domains => add domain
+//! Projeyi deploy ettikten sonra google sign-in çalışması için domain listesine deploy linkini ekle
+export const signUpWithGoogle = (navigate) => {
+  const provider = new GoogleAuthProvider();
+  //? Açılır pencere ile giriş yapılması için kullanılan firebase metodu
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      console.log(result);
+      navigate("/");
+      // ...
+    })
+    .catch((error) => {
+      // Handle Errors here.
+      console.log(error);
+    });
 };
