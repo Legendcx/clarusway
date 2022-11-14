@@ -1,9 +1,10 @@
+import { useSelect } from "@mui/base";
 import { Navigate, Outlet } from "react-router-dom";
 
 const PrivateRouter = () => {
-  const user = true;
+  const {user} = useSelect((state) => state.auth);
 
-  return user ? <Outlet /> : <Navigate to="/login" />;
+  return user?.email ? <Outlet /> : <Navigate to="/login" />;
 };
 
 export default PrivateRouter;

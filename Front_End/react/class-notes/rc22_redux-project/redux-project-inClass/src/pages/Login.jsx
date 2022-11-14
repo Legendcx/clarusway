@@ -9,18 +9,21 @@ import Container from "@mui/material/Container";
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import {useDispatch} from "react-redux";
+import { setUser } from "../features/authSlice";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(setUser)
+    dispatch(setUser({email, password}))
     setEmail("");
     setPassword("");
-    Navigate("/")
+    Navigate("/");
   };
 
   return (
@@ -41,7 +44,7 @@ export default function Login() {
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
-        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+        <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1 }}>
           <TextField
             margin="normal"
             required
