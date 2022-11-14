@@ -67,7 +67,7 @@ const FormComponent = ({info, setInfo, handleSubmit}) => {
             <TextField
               variant="outlined"
               name="phoneNumber"
-              value={}
+              value={phoneNumber}
               onChange={handleChange}
               placeholder="Phone Number"
               InputProps={{
@@ -84,7 +84,7 @@ const FormComponent = ({info, setInfo, handleSubmit}) => {
                 label="Gender"
                 name="gender"
                 variant="outlined"
-                value={}
+                value={gender}
                 onChange={handleChange}
               >
                 <MenuItem value="Female">Female</MenuItem>

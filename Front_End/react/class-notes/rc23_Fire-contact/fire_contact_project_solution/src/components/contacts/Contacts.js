@@ -8,8 +8,11 @@ import {
   TableBody,
   Paper,
 } from "@mui/material";
+import { useFetch } from "../../utils/functions";
 
 const Contacts = () => {
+  const {isLoading, contactList} = useFetch()
+  
   return (
     <div>
       <h2 className="contact-header">Contacts</h2>
@@ -26,6 +29,7 @@ const Contacts = () => {
           </TableHead>
 
           <TableBody>
+      {}
             <TableRow></TableRow>
           </TableBody>
         </Table>
