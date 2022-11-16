@@ -10,6 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Formik, Form } from "formik";
 import { TextField } from "@mui/material";
+import { ErrorSharp } from "@mui/icons-material";
 
 const loginSchema = {};
 
@@ -55,28 +56,33 @@ const Login = () => {
           </Typography>
 
           <Formik
-          initialValues={{email:"", password: ""}}
-          validationSchema={loginSchema}
-          onSubmit={(values, actions)=>{
-actions.resetForm();
-actions.setSubmitting(false);
-          }}>
-            {({values, isSubmitting, handleChange,handleBlur})=>{
-      <Form>
-          <Box>
-            <TextField
-            label="Email"
-            name="email"
-            id="email"
-            type="email"
-            variant="email"
-            value={values.email}
-            onChange={handleChange}/>
-          </Box>
-      </Form>
-            }}        
-
-
+            initialValues={{ email: "", password: "" }}
+            validationSchema={loginSchema}
+            onSubmit={(values, actions) => {
+              actions.resetForm();
+              actions.setSubmitting(false);
+            }}
+          >
+            {({ values, isSubmitting, handleChange, handleBlur, touched, errors}) => {
+              return (
+                <Form>
+                  <Box>
+                    <TextField
+                      label="Email"
+                      name="email"
+                      id="email"
+                      type="email"
+                      variant="email"
+                      value={values.email}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      error={touched.email && Boolean(errors.email)}
+                      helperText={touched.email && errors.email }
+                    />
+                  </Box>
+                </Form>
+              );
+            }}
           </Formik>
 
           <Box sx={{ textAlign: "center", mt: 2 }}>
