@@ -49,7 +49,7 @@ const Login = () => {
           <Typography
             variant="h4"
             align="center"
-            mb={4}
+            mb={3}
             color="secondary.light"
           >
             Login

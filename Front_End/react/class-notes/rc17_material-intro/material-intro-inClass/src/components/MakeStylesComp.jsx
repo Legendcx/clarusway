@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     background: 'linear-gradient( 45deg, lightblue, blue)',
     border: 0,
     borderRadius: '1rem',
-    color: 'lightyellow',
+    color: 'yellow',
     padding: '5px 30px',
     '&:hover': {
       opacity: '0.5',
