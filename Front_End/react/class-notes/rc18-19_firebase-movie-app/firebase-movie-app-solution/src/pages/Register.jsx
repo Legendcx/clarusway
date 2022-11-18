@@ -49,10 +49,10 @@ const Register = () => {
             className="absolute inset-[2px] rounded-[8px] bg-[#28292d] z-[10] form flex flex-col p-20"
             onSubmit={handleSubmit}
           >
-            <h2 className="text-[#ff4b45] text-2xl font-[500] text-center tracking-[0.1em]">
+            <h2 className="text-[#ff4b48] text-2xl font-[500] text-center tracking-[0.1em]">
               Sign Up
             </h2>
-            <div className="relative w-[300px] mt-[35px] inputbox">
+            <div className="relative w-[301px] mt-[35px] inputbox">
               <input
                 type="text"
                 required
