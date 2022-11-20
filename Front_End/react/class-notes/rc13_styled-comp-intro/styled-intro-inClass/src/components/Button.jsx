@@ -22,7 +22,7 @@ font-family: 'Segoe UI', sans-serif;
 export const TomatoButton = styled(Button)`
   background-color: ${(props) => (props.primary ? "tomato" : "red")};
   background-color: ${(props) => (props.primary ? "red" : "green")};
-  border-color: tomato;
+  border-color: #ff6347e1;
 
 `
 
