@@ -1,10 +1,24 @@
 
-import React from 'react'
+import axios from "axios";
+import { useSelector } from "react-redux";
+
+const BASE_URL = "https://13749.fullstack.clarusway.com/";
+
+//* Token'siz api istekleri icin bir instance olustur.
+export const axiosPublic = axios.create({
+  baseURL: BASE_URL,
+});
 
 const useAxios = () => {
-  return (
-    <div>useAxios</div>
-  )
-}
+  const { token } = useSelector((state) => state.auth);
 
-export default useAxios
+  //* Token gerektiren istekler icin bir baska instance olusutur.
+  const axiosWithToken = axios.create({
+    baseURL: BASE_URL,
+    headers: { Authorization: `Token ${token}` },
+  });
+
+  return { axiosWithToken };
+};
+
+export default useAxios;
