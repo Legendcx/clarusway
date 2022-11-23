@@ -6,7 +6,7 @@ import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import EditIcon from "@mui/icons-material/Edit";
 import { CardHeader } from "@mui/material";
 import useStockCalls from "../hooks/useStockCalls";
-import { btnHoverStyle, flexCenter, flexRow } from "../styles/globalStyle";
+import { btnHoverStyle, flexCenter, flexColumn } from "../styles/globalStyle";
 
 const BrandCard = ({ brand, setOpen, setInfo }) => {
   const { deleteBrand } = useStockCalls();
@@ -34,7 +34,7 @@ const BrandCard = ({ brand, setOpen, setInfo }) => {
         alt="brand-img"
       />
 
-      <CardActions sx={flexRow}>
+      <CardActions sx={flexCenter}>
         <EditIcon
           sx={btnHoverStyle}
           onClick={() => {
