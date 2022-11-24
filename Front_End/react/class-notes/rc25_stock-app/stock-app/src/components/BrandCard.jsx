@@ -31,7 +31,7 @@ const BrandCard = ({ brand, setOpen, setInfo }) => {
         image={brand?.image}
         sx={{ p: 1, objectFit: "contain" }}
         component="img"
-        alt="brand-img"
+        alt="img-alt"
       />
 
       <CardActions sx={flexCenter}>
