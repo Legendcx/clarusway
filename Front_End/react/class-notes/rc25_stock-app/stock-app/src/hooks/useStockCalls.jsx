@@ -37,7 +37,7 @@ const useStockCalls = () => {
       const [products, categories, brands] = await Promise.all([
         axiosWithToken.get("stock/products/"),
         axiosWithToken.get("stock/categories/"),
-        axiosWithToken.get("stock/brands/")
+        axiosWithToken.get("stock/brands/"),
       ]);
 
       dispatch(
@@ -78,6 +78,7 @@ const useStockCalls = () => {
 
   const postFirm = (info) => postStockData(info, "firms");
   const postBrand = (info) => postStockData(info, "brands");
+  const postProduct = (info) => postStockData(info, "products");
 
   //!------------- PUT CALLS ----------------
   const putStockData = async (info, url) => {
@@ -108,6 +109,7 @@ const useStockCalls = () => {
     postFirm,
     postStockData,
     postBrand,
+    postProduct,
     putFirm,
     putStockData,
     putBrand,

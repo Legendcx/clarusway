@@ -24,7 +24,6 @@ export const flexCenter = {
 export const flexColumn = {
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
   gap: 2,
 };
 
