@@ -9,7 +9,7 @@ const LoginForm = ({ values, handleChange, errors, touched, handleBlur }) => {
   const { loading } = useSelector((state) => state.auth);
   return (
     <Form>
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+      <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
         <TextField
           label="Email"
           name="email"
