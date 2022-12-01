@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
+// type Task  = string;
+interface IInputForm {
+  addTodo:AddFn;
+} 
 
+const InputForm:React.FC<IInputForm> = ({addTodo}) => {
+  const [task, setTask] = useState("")
 
-const InputForm = () => {
+  const handleClick = ()=> {
+    addTodo(task);
+    setTask("")
+  }
   
   return (
     <div className="input-form">
@@ -11,11 +20,16 @@ const InputForm = () => {
         placeholder="Enter the todo..."
         type="text"
         maxLength={40}
+        value={task}
+        onChange={(e)=>setTask(e.target.value)}
         
       />
       <button
         className="btn-hover btn-color"
         type="submit"
+        onClick={handleClick}
+        //! disabled özelliği button'un. input task varsa true ise bas.
+        disabled={!task}
       >
         Add New Todo
       </button>
