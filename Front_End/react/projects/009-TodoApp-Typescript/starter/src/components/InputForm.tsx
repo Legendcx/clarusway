@@ -37,4 +37,4 @@ const InputForm:React.FC<IInputForm> = ({addTodo}) => {
   )
 }
 
-export default InputForm
+export default InputForm;
