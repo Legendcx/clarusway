@@ -5,7 +5,7 @@ import axios from 'axios';
 const useAxios = () => {
     const [todos, setTodos] = useState<TodoType[]>([])//TodoType array olarak kabul ediyor
     const getTodos = async () => {
-        const { data } = await axios.get<TodoType[]>("https://635a951e6f97ae73a63139c4.mockapi.io/todos")//gelen response a göre belirledik bu ne işe yarıyor gelen datanın fieldlarına erişebiliyoruz
+        const { data } = await axios.get<TodoType[]>("https://634ac3fc5df952851418480f.mockapi.io/api/todos")//gelen response a göre belirledik bu ne işe yarıyor gelen datanın fieldlarına erişebiliyoruz
         // console.log(data)
         setTodos(data)
     }
@@ -14,7 +14,7 @@ const useAxios = () => {
             task: text,
             isDone: false
         }
-        const { data } = await axios.post<TodoType>("https://635a951e6f97ae73a63139c4.mockapi.io/todos", newTodo)
+        const { data } = await axios.post<TodoType>("https://634ac3fc5df952851418480f.mockapi.io/api/todos", newTodo)
         if (data) {
             getTodos()
         }
@@ -26,14 +26,14 @@ const useAxios = () => {
             task: item.task,
             isDone: !item.isDone
         }
-        const { data } = await axios.put<TodoType>(`https://635a951e6f97ae73a63139c4.mockapi.io/todos/${item.id}`, updateTodo)
+        const { data } = await axios.put<TodoType>(`https://634ac3fc5df952851418480f.mockapi.io/api/todos/${item.id}`, updateTodo)
         if (data) {
             getTodos()
         }
     }
     const deleteTodo: DeleteFn = async (id) => {
         try {
-            const res = await axios.delete<TodoType>(`https://635a951e6f97ae73a63139c4.mockapi.io/todos/${id}`)
+            const res = await axios.delete<TodoType>(`https://634ac3fc5df952851418480f.mockapi.io/api/todos/${id}`)
             console.log(res)
             getTodos()
         } catch (error) {

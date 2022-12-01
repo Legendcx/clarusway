@@ -58,20 +58,33 @@ return message + " " + person + "!";
 // let emp = new Employee(100, "John");
 // console.log(emp);
 
-class Person {
-  name: string;
-  constructor(name:string) {
-    this.name = name
-  }
+// class Person {
+//   name: string;
+//   constructor(name:string) {
+//     this.name = name
+//   }
+// }
+
+// class Employee extends Person {
+//   empCode:number;
+//   constructor(code:number, name:string) {
+//     super(name);
+//     this.empCode = code
+//   }
+//   displayName():void {
+//     console.log(this.name, this.empCode);
+//   }
+// }
+
+function getItems<T>(items:T[]):T[] {
+  return items;
 }
 
-class Employee extends Person {
-  empCode:number;
-  constructor(code:number, name:string) {
-    super(name);
-    this.empCode = code
-  }
-  displayName():void {
-    console.log(this.name, this.empCode);
-  }
+let numArr = getItems([4,5,6])
+numArr.push(5);
+// numArr.push("5");
+console.log(numArr);
+
+function displayName<U,Y>(p1:T, p2:Y): void {
+  console.log("param1: " + p1, "");
 }
