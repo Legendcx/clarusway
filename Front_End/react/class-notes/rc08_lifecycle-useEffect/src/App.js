@@ -9,10 +9,10 @@ function App() {
   const [show, setShow] = useState(true);
 
   return (
-    <div className="container text-center mt-4">
+    <div className="container text-center mt-3">
       {/* <button className="btn btn-dark" onClick={() => setShow(!show)}>
         {show ? "Hide" : "Show"}
-      </button> */}
+      </button> */} 
 
       {/* Short Circuit */}
       {/* {show && <LifeCycleMethods />} */}
