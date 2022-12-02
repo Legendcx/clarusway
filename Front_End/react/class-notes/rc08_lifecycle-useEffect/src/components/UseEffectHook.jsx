@@ -69,7 +69,7 @@ const UseEffectHook = () => {
 
   console.log("Rendering");
   return (
-    <div className="container text-center">
+    <div className="container text-center mt-5">
       <h1 className="text-danger">USE EFFECT</h1>
       <h3>COUNT={count}</h3>
       <button className="btn btn-info" onClick={() => setCount(count + 1)}>
