@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const Home = () => {
   const [tutorials, setTutorials] = useState([]);
 
-  const url = "https://tutorials-api-cw.herokuapp.com/api/tutorials";
+  const url = "https://635a951e6f97ae73a63139c4.mockapi.io/tutorialApp";
 
   //? CRUD: (GET-READ)
   const getTutorials = async () => {

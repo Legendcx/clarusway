@@ -6,7 +6,7 @@ import EditTutorial from "./EditTutorial";
 const TutorialList = ({ tutor, getTutorials }) => {
   //! DELETE (CRUD-Delete)
   const deleteTutorial = async (id) => {
-    const url = "https://tutorials-api-cw.herokuapp.com/api/tutorials";
+    const url = "https://635a951e6f97ae73a63139c4.mockapi.io/tutorialApp";
     try {
       await axios.delete(`${url}/${id}`);
     } catch (error) {
@@ -19,7 +19,7 @@ const TutorialList = ({ tutor, getTutorials }) => {
   //! PUT: Whole Update, PATCH: Partially Update
   const editTutorial = async ({ id, title, description }) => {
     // const { id, title, description } = item;
-    const url = "https://tutorials-api-cw.herokuapp.com/api/tutorials";
+    const url = "https://635a951e6f97ae73a63139c4.mockapi.io/tutorialApp";
     try {
       await axios.put(`${url}/${id}`, { title, description });
     } catch (error) {
