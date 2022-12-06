@@ -66,3 +66,27 @@ source_string = "interoperability"
 print(source_string.strip("yi"))   #  output = teroperability 
 # removes trailing "y" or "i" or "yi" or "iy" from both sides
 # boşluk yoksa bir harf veya kelime verilirse onun tüm varyantlarını cümle veya kelimenin başında sonundan siler.
+fruits = ['apple', 'banana', 'watermelon', 'orange', 'mango', 'avocado']
+
+fruit_list = []
+fruit_list.insert(0, fruits)
+print(fruit_list[0][2][7])
+
+# LIST COMPREHENSION
+my_list = [1,2,3,4,5,6,9]
+new_list = []
+
+for x in my_list:
+  if x % 2 != 0:
+    new_list.append(x ** 2)
+print(new_list)
+
+# Aynı sonucu list comherension la şöyle yazarız.
+# [expression for item in list]
+# [expression for item in list execute body if condition]
+print([x ** 2 for x in my_list if x % 2 != 0])
+
+print(int(0xA))
+print(r"\nhello")
+
+print("new" "line" "end", 3)
