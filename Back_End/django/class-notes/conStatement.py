@@ -96,18 +96,18 @@ while not age.isdigit():  # Girilen rakam (0-9) isnumeric de diyebiliriz.
 print(f"Your age is {age}")
 
 ##----------------------------------
-a = "istanbul", "ankara", "muş"
-word_list = a.split(", ")
+# a = "istanbul","ankara","muş"
+# word_listg = a.split(",")
 
-i = 0
-longest = 0
-while i < len(word_list):
-  if len(word_list[i]) > longest:
-    longest = len(word_list[i])
-  i += 1
-print(longest)
+# i = 0
+# longest = 0
+# while i < len(word_listg):
+#   if len(word_listg[i]) > longest:
+#     longest = len(word_listg[i])
+#   i += 1
+# print(longest)
   
-
+ 
   
     
 ##! SAYI TAHMİN OYUNU
@@ -131,16 +131,53 @@ print(longest)
 ##! ========= FOR LOOPS ===========================
 ##! ===============================================
 
-for i in [1, 2, 3, 4, 5] :
+# --------------------------------------
+input = "clarusway"
+counter = 0
+
+for i in input:
+  counter += 1
+  if counter < len(input):
+    i += "-"
+  elif input[-1] == i:
+    i
+  print(i, end="")
+     
+     
+words = "clarusway"
+word1 = ''
+
+# for i, y in enumerate(words):
+#   if i == 0:
+#      word1 += y
+#   else
+     
+
+for i in [1, 2, 3, 4, 5]:
     print(i)
+    
+# --------------------------------------------------
     
 seasons = ['spring', 'summer', 'autumn', 'winter']
 
 for season in seasons :
-    print(season, end=", ")
+  print(season, end=", ")
     
 for b in {"n1":"one", "n2":"two", "n3":"three"}:
   print(b)
+
+# ----------------------------------------
+  names = ["veli", "Ali", "Ahmet"]
+  for i in names:
+    print(f'Hello', i)
+ 
+#---------------------------------   
+  num_list = []
+  for i in range(1,6):
+    num_list.append(i)
+  print(num_list)
+    
+    
   
   
 # times = int(input("How many times should I say 'I love you'"))
@@ -218,3 +255,27 @@ if count < 3: print("{} is a prime number".format(n))
 else: print("{} is not a prime number".format(n))
 
 
+#-----------------------------
+
+a = 3
+
+for i in range(11):
+  print(f'{a} x {i} = {a * i} ')
+  
+numaralar = [1,2,3,4,5,6,7,8,9,10] 
+cif = []
+tek = []
+
+for i in numaralar:
+  if i % 2 == 0:
+    cif.append(i)
+  else:
+    tek.append(i)
+
+# ------------------------------------    
+for i in range(1,10):
+  print(str(i)*i,)
+    
+# ------------------------------------ 
+
+names_a = [name.lower() for name in names]
