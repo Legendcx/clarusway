@@ -225,3 +225,22 @@ print(set1 & set2)  # print(set1.intersection(set2))
 print(set1 | set2 )
 
 #! FROZENSET () setlerin elemanları değiştirilemeyen tipidir.
+
+for x in set("dht"):
+  print(x*2)
+  
+d = {"john":40, "peter":45}
+d["john"]
+
+D = {1 : 1, 2 : '2', '1' : 1, '2' : 3}
+D['1'] = 2
+print(D[D[D[str(D[1])]]])
+
+# x = 'abcd'
+# for i in range(len(x)):
+#  i[x].upper()
+# print (x)
+
+a=[1,2,3,4]
+b=[sum(a[0:x+1]) for x in range(0,len(a))]
+print(b)
