@@ -160,21 +160,21 @@
     
     
     
-from datetime import datetime
+# from datetime import datetime
 
-num1 = 250
-num2 = [1,2,3,4,5,0,20]
-res_list = []
+# num1 = 250
+# num2 = [1,2,3,4,5,0,20]
+# res_list = []
 
-for num in num2:
-  try:
-    res_num = num1/num
-  except Exception as e:  # hatanın tam olarak ne olduğunu bilemezsek bunu yazzdırabilriz
-      with open("error.log", 'a') as file:
-        file.write(f'You have error {e} --->{num} at {datetime.now()}\n')
-  else:
-    res_list.append(res_num)
-  finally:
-    print('This works every time')
+# for num in num2:
+#   try:
+#     res_num = num1/num
+#   except Exception as e:  # hatanın tam olarak ne olduğunu bilemezsek bunu yazzdırabilriz
+#       with open("error.log", 'a') as file:
+#         file.write(f'You have error {e} --->{num} at {datetime.now()}\n')
+#   else:
+#     res_list.append(res_num)
+#   finally:
+#     print('This works every time')
 
-print(res_list)
+# print(res_list)
