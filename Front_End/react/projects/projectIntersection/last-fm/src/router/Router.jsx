@@ -15,7 +15,7 @@ const Router = () => {
     </Routes>
       <Footer/>
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default Router
