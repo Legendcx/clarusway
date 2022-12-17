@@ -184,6 +184,82 @@ print_types(test) """
 
 #? Kullanıcıyı gereksiz detaylardan kurtarmal ve ihtiyacı olmayan şeyleri göstermek. Soyutlama yani
 
-liste = [2,3,5,1,4]
-liste.sort(reverse=True)
-print(liste)
+# liste = [2,3,5,1,4]
+# liste.sort(reverse=True)
+# print(liste)
+
+
+#!  ===========   INHERITANCE (MİRAS-KALITIM)  3. ÖZELLİK ===========
+
+# parent-child ilişkisi vardır. Özelliğini aktaran parent -- alan ise child'dır.
+class Person:
+  company = "Burkiway"
+  
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+  
+  def __str__(self):
+    return f"{self.name}"
+  
+  def get_details(self):
+    print(self.name, self.age)
+    
+
+class Lang:
+  def __init__(self, langs):
+    self.langs = langs
+    
+  def display_langs(self):
+    print(self.langs)
+class Employe(Person, Lang):
+  
+
+  def __init__(self, name, age, path, langs):  # Buna yukarıdan alma buradan almaya POLymorfizmin OVERRİDDING ayağı deniyor
+    # self.name = name  ### bunları tekrar yazmaya gerek yoktur.
+    # self.age = age
+    super().__init__(name, age)  # bu şu demek name ve age yi parent ten al diğerlerini buradan al. SUPER (parent i gösteriyor.)
+    self.path = path
+    Lang.__init__(self, langs)
+    
+  def get_details(self):
+    super().get_details()
+    print(self.path)
+    
+    
+  def get_details(self, salary=None, duration=None):
+    super().get_details()
+    print(self.path)
+
+
+
+emp1 = Employe("Eboş", 40, "FS", "Javascript")
+emp1.get_details()
+print(emp1.company)
+emp1.display_langs()
+
+
+#!  ===========   POLYMORPHIZM ()  4. ÖZELLİK ===========
+#! miras aldığımız metodları yeniden tanımlamak demektir.
+#! OVERRIDING ETMEK  =  yeniden tanımlamak
+# Polymorphism, bir programlama dilinde bir nesnenin birden fazla şekilde davranabileceği anlamına gelir. Bu, aynı adı taşıyan farklı metotların veya fonksiyonların, farklı türlerde veriler için farklı şekillerde çalıştırılmasını sağlar.
+
+# Polymorphism, Object Oriented Programming (OOP) yönteminde önemli bir kavramdır ve genellikle inheritance (kalıtım) ile birlikte kullanılır. Örneğin, bir "Kedi" sınıfı oluşturabilir ve bu sınıfın "Miyavla" metodunu tanımlayabiliriz. Daha sonra, "Tekir" sınıfını "Kedi" sınıfından kalıtım alarak oluşturabiliriz. Bu sınıfta, "Miyavla" metodunu yeniden tanımlayabilir ve bu metodun, "Tekir" sınıfı için uygun bir şekilde çalışmasını sağlayabiliriz.
+
+# Polymorphism, bir programın çeşitlilik ve esneklik kazanmasına yardımcı olur ve genellikle kod tekrarını azaltır.
+# Parent ten aldığımız metodu yeniden oluşturmak
+
+
+#! OVERLOADING ikinci ayağıda budur. 
+#! Aynı metoddan bir den çok faydalanmak demektirç
+#! Python overloading modelini desteklemez. Bunu, ekstra moduller ile gerçekleştirebilirsiniz.
+
+
+
+
+
+#! ========================================================
+#!  ===========   MULTIPLE INHERITANCE ÖZELLİĞİ ===========
+#!=========================================================
+
+#? super() kullanınca self parametresine gerek kalmaz ve ilk parenti temsil ettiğimizi belirtir.

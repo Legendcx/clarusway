@@ -123,26 +123,17 @@
 ##  Burhan YİĞİTER  
 
 
-def repeat(word, n, sign):
-  print(*n*[word], sep=sign)
+# def repeat(word, n, sign):
+#   print(*n*[word], sep=sign)
 
-def main():
-    string=input('insert a string:  ')
-    sign=input('insert the separator:  ')
-    n=int(input('insert number of repetition:  '))
+# def main():
+#     string=input('insert a string:  ')
+#     sign=input('insert the separator:  ')
+#     n=int(input('insert number of repetition:  '))
 
-    repeat(string, n, sign)
+#     repeat(string, n, sign)
 
-main()
-
-
-
-
-
-
-
-
-
+# main()
 
 
 # def myprint(word, n, delim):
