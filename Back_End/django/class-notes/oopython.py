@@ -263,3 +263,44 @@ emp1.display_langs()
 #!=========================================================
 
 #? super() kullanınca self parametresine gerek kalmaz ve ilk parenti temsil ettiğimizi belirtir.
+
+#! ========================================================
+#!  ===========   OTHER TOPICS (YARDIMCI FONKSİYON)===========
+#!=========================================================
+
+# print(Employe.mro())   # class larımızın nereden alındığını gösterir.
+
+# print(help(Employe))
+
+# print(emp1.__dict__)
+
+# print(isinstance(emp1, Employe))
+
+# print(isinstance(Lang, Employe))
+
+
+
+# getattr : returns attribute value of instance
+
+print(getattr(emp1, "name"))
+x = getattr(emp1, "name")
+print(x)
+
+
+# setattr : update attribute of instance
+
+setattr(emp1, "name", "burhan")
+print(getattr(emp1, "name"))
+
+
+# hasattr : return boolean
+
+print(hasattr(emp1, "burhan"))
+
+
+# delattr : delete attribute of instance
+print(delattr(emp1, "age"))
+
+
+###! INNER CLASS ==================================
+

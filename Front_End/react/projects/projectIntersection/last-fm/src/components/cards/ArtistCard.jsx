@@ -1,13 +1,14 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom'
+import React from "react";
+import { useNavigate } from "react-router-dom";
+const ArtistCard = ({ image, name, listeners, playcount}) => {
 
-const ArtistCard = ({image, name, listeners, playcount}) => {
-
+  const navigate = useNavigate()
+  console.log();
   return (
-    <div>
-      <Link
-        to="details"
+    <div className="flex justify-center my-4 ">
+      <div
+      onClick= {() =>navigate("/details/" + name)}
+      
         className="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
       >
         <img
@@ -16,25 +17,30 @@ const ArtistCard = ({image, name, listeners, playcount}) => {
           alt=""
         />
         <div className="flex flex-col justify-between p-4 leading-normal">
-          <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Artist
-          </h3>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {name}
-          </h5>
-          </div>
-          <div className="flex flex-col justify-between p-4 leading-normal">
-          <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {listeners}
-          </h3>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {playcount}
-          </h5>
-          </div>
-        
-      </Link>
-    </div>
-  );
-};
 
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Artist
+          </h5>
+
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            {name}
+          </p>
+
+        </div>
+
+        <div className="flex flex-col justify-between p-4 leading-normal">
+
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            listeners : {listeners}
+          </p>
+
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            playcount : {playcount}
+          </p>
+
+        </div>
+      </div>
+    </div>
+  )
+}
 export default ArtistCard;

@@ -1,27 +1,31 @@
-import {createSlice} from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   artist: [],
-  loading:false,
-  error:false,
+  loading: false,
+  error: false,
 };
 
-const fetchSlice = createSlice({
-  name:"lastfm",
+const FetchSlice = createSlice({
+  name: "lastfm",
   initialState,
-  reducer: {
-    fetchStart: (state) => {
+  reducers: {
+    fetchStart: (state, { payload }) => {
       state.loading = true;
     },
-    fetchSuccess: (state, {payload}) => {
-      state.loadin = false;
+    fetchSuccess: (state, { payload }) => {
+      state.loading = false;
       state.artist = payload;
-      console.log(payload);
+      // console.log(payload);
+      // içine ne geldi kontrol etmek için
     },
-    fetchError: (state) => {
+    fetchError: (state, { payload }) => {
       state.error = true;
-      state.loadin = false;
-      console.log(payload);
-    }
-  }
-})
+      state.loading = false;
+    },
+  },
+});
+
+export const { fetchStart, fetchSuccess, fetchError } = FetchSlice.actions;
+
+export default FetchSlice.reducer;

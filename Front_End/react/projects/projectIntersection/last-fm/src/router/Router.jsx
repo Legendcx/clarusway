@@ -1,21 +1,19 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Detail from "../pages/Detail";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Details from "../pages/Details";
 
 const Router = () => {
   return (
     <BrowserRouter>
-    <Navbar/>
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      {/* <Route index path="/" element={<Home/>} /> */}
-      <Route path="/detail" element={<Detail/>} />
-    </Routes>
-      <Footer/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/details/:name" element={<Details />}/>
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
-
-export default Router
+export default Router;

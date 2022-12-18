@@ -2,7 +2,7 @@ import React from 'react'
 import ArtistCard from '../components/cards/ArtistCard'
 import axios from "axios";
 import {useDispatch, useSelector} from "react-redux";
-import {fetchStart, fetchError,fetchSuccess} from "../features/fetchSlice";
+import {fetchStart, fetchError,fetchSuccess} from "../features/FetchSlice";
 
 const Home = () => {
 
