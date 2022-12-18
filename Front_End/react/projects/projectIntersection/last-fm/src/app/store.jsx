@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import FetchSlice from "../features/FetchSlice";
+import fetchSlice from "../features/fetchSlice";
 
 const store = configureStore({
   reducer: {
-    lastfm: FetchSlice,
+    lastfm: fetchSlice,
   },
 });
 export default store;

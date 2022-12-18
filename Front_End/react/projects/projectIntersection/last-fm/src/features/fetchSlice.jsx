@@ -6,7 +6,7 @@ const initialState = {
   error: false,
 };
 
-const FetchSlice = createSlice({
+const fetchSlice = createSlice({
   name: "lastfm",
   initialState,
   reducers: {
@@ -26,6 +26,6 @@ const FetchSlice = createSlice({
   },
 });
 
-export const { fetchStart, fetchSuccess, fetchError } = FetchSlice.actions;
+export const { fetchStart, fetchSuccess, fetchError } = fetchSlice.actions;
 
-export default FetchSlice.reducer;
+export default fetchSlice.reducer;

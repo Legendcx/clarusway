@@ -1,10 +1,10 @@
 import React from 'react'
 
-const TopAlbum = ({name,playcount, listeners, image, url}) => {
+const TopAlbum = ({name, playcount, listeners, image, url}) => {
   return (
     <div className="flex justify-center my-4 ">
     <div
-    onClick= {() =>navigate("/details/" + name)}
+    // onClick= {() =>navigate("/details/" + name)}
     
       className="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
     >
@@ -31,7 +31,7 @@ const TopAlbum = ({name,playcount, listeners, image, url}) => {
       </div>
     </div>
   </div>
-  )
-}
+  );
+};
 
-export default TopAlbum
+export default TopAlbum;
