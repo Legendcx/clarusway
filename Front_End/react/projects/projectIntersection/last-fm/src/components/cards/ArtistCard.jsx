@@ -7,7 +7,7 @@ const ArtistCard = ({ image, name, listeners, playcount, mbid}) => {
   return (
     <div className="flex justify-center my-4 ">
       <div
-      onClick= {() =>navigate("details/" + name)}
+      onClick= {() =>navigate(`details/${name}`, {state:image})}
       
         className="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
       >

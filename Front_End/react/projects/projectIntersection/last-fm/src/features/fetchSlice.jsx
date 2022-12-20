@@ -4,6 +4,7 @@ const initialState = {
   artist: [],
   loading: false,
   error: false,
+  darkMode: false,
 };
 
 const fetchSlice = createSlice({
@@ -23,6 +24,11 @@ const fetchSlice = createSlice({
       state.error = true;
       state.loading = false;
     },
+    setDarkMode: (state, { payload }) => {
+      state.darkModeerror = payload;
+      
+    },
+    
   },
 });
 

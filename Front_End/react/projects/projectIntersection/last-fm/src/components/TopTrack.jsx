@@ -23,10 +23,10 @@ const TopTrack = ({name,playcount, listeners, image, url}) => {
       </div>
       <div className="flex flex-col justify-between p-4 leading-normal">
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          listeners : {listeners}
+          listeners : {playcount}
         </p>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          playcount : {playcount}
+          playcount : {listeners}
         </p>
       </div>
     </div>

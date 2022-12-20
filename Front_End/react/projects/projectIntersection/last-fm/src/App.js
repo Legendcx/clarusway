@@ -6,14 +6,11 @@ import store from "./app/store";
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-grey-100 dark:bg-[#23242a]">
       <Provider store={store}>
         <Router />
       </Provider>
-
-      <Router />
     </div>
   );
 }
-
 export default App;
