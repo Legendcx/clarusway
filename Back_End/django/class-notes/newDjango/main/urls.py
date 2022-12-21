@@ -14,8 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+# from fscohort.views import postclass, postclass1
+# from dscohort.views import preclass
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('postclass/', include('fscohort.urls')),
+    path('preclass/', include('dscohort.urls')),
+    # path('postclass1/', postclass1),
+    # path('preclass/', preclass),
+    # path('postclass/preclass', preclass),
 ]
