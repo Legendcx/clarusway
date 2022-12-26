@@ -18,20 +18,21 @@ from .models import Student, Path
 #         instance.age = validated_data.get('age', instance.age)
 #         instance.save()
 #         return instance
-    
+
+
 class StudentSerializer(serializers.ModelSerializer):
     
-    born_year = serializers.SerializerMethodField()  # read only
-    path = serializers.StringRelatedField()  # read only
+    born_year = serializers.SerializerMethodField()  # read_only
+    path = serializers.StringRelatedField() # read_only
     path_id = serializers.IntegerField()
     
     class Meta:
         model = Student
         # fields = "__all__"
-        fields = ["id", "first_name", "last_name", "number", "age", "born_year", "path", "path_id"]
-        # exclude = ["number"] hariç demektir.
+        fields = ["id","first_name", "last_name","number", "age", "born_year", "path", "path_id"]
+        # exclude = ["number"]
         
-        
+    
     def get_born_year(self, obj):
         import datetime
         current_time = datetime.datetime.now()
@@ -42,12 +43,12 @@ class PathSerializer(serializers.ModelSerializer):
     
     # students = StudentSerializer(many=True)
     students = serializers.HyperlinkedRelatedField(
-        many = True,
-        read_only = True,
-        view_name = "detail"
+        many=True,
+        read_only=True,
+        view_name='detail'
     )
-    
     
     class Meta:
         model = Path
-        fields =["id", "path_name", "students"]
+        # fields = "__all__"
+        fields = ["id", "path_name", "students"]
