@@ -7,24 +7,35 @@ const Navbar = () => {
 const [darkMode, setDarkMode] = useState(false);
 const dispatch = useDispatch()
 
+// darkMode
+// ? localStorage.setItem('color-theme', "")
+// : localStorage.setItem('color-theme', "dark")
+
+
+//   if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+//     document.documentElement.classList.add('dark');
+// } else {
+//     document.documentElement.classList.remove('dark')
+// }
 darkMode
-? localStorage.setItem('color-theme', "")
-: localStorage.setItem('color-theme', "dark")
+    ? localStorage.setItem("color-theme", "")
+    : localStorage.setItem("color-theme", "dark");
+ 
+  if (localStorage.getItem("color-theme") === "dark") {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
 
-
-  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark');
-} else {
-    document.documentElement.classList.remove('dark')
-}
   return (
-    <nav className="flex justify-between p-2">
-      <Link to={"/"}>Go Home</Link>
+    <nav className="flex justify-between p-3  text-4xl bg-rose-500">
+      <Link className="text-white font-bold border-4 p-2 rounded-md m-1 hover:outline-double " to={"/"}>Go Home</Link>
       <button
         type="button"
         title="Toggle dark/light mode"
-        onClick={() => setDarkMode(!darkMode)}
-        className="flex items-center p-2 mr-2 text-xs font-medium text-gray-700 bg-white rounded-lg border border-gray-200 toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+        // onClick={() => setDarkMode(!darkMode)}
+        onClick={() => dispatch(setDarkMode(!darkMode)) }
+        className="flex items-center p-2 mr-2 text-2xl font-medium text-gray-700 bg-white rounded-lg border border-gray-200 toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 w-18 h-15 justify-center"
       >
         {darkMode ? (
           <svg
@@ -32,7 +43,7 @@ darkMode
             icon="moon"
             className="w-4 h-4"
             fill="currentColor"
-            viewBox="0 0 20 20"
+            viewBox="2 2 15 15"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
@@ -43,7 +54,7 @@ darkMode
             icon="sun"
             className="w-4 h-4"
             fill="currentColor"
-            viewBox="0 0 20 20"
+            viewBox="2 2 15 15"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path

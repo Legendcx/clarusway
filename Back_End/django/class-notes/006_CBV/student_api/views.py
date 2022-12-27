@@ -188,16 +188,16 @@ class StudentDetail(APIView):
 
 #? Mixins
 
-""" - ListModelMixin
-    - list method
-- CreateModelMixin
-    - create method
-- RetrieveModelMixin
-    - retrieve method
-- UpdateModelMixin
-    - update method
-- DestroyModelMixin
-    - destroy method """
+# """ - ListModelMixin
+#     - list method
+# - CreateModelMixin
+#     - create method
+# - RetrieveModelMixin
+#     - retrieve method
+# - UpdateModelMixin
+#     - update method
+# - DestroyModelMixin
+#     - destroy method """
 
 
 
