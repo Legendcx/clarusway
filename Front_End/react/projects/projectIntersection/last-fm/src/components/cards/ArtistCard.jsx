@@ -5,11 +5,11 @@ const ArtistCard = ({ image, name, listeners, playcount, mbid}) => {
   const navigate = useNavigate()
   // console.log();
   return (
-    <div className="flex justify-center w-10/12 my-4 ">
+    <div className="flex justify-center my-4 ">
       <div
       onClick= {() =>navigate(`details/${name}`, {state:image})}
       
-        className="flex flex-col items-center bg-rose-500 border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-rose-500 dark:hover:bg-gray-700"
+        className="flex flex-col items-center w-2/5 bg-rose-500 border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-rose-500 dark:hover:bg-gray-700"
       >
         <img
           className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
