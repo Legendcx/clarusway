@@ -30,7 +30,7 @@ class StudentSerializer(serializers.ModelSerializer):
         model = Student
         # fields = "__all__"
         # fields = ["id","first_name", "last_name","number", "age", "born_year", "path", "path_id"]
-        fields = ["id","first_name", "last_name","number", "path", "path_id"]
+        fields = ["id","first_name", "last_name", "number", "path", "path_id"]
 
         # exclude = ["number"]
         

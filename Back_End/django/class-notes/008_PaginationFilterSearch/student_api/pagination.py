@@ -1,5 +1,5 @@
 from rest_framework.pagination import (
-  PageNumberPagination, LimitOffsetPagination
+  PageNumberPagination, LimitOffsetPagination, CursorPagination
 )
 
 class CustomPageNumberPagination(PageNumberPagination):
@@ -9,5 +9,10 @@ class CustomPageNumberPagination(PageNumberPagination):
 class CustomLimitOffsetPagination(LimitOffsetPagination):
   default_limit=10
   limit_query_param='maximum'
-  offset_query_param = 'başlangıç'
+  offset_query_param = 'başlangic'
+  
+class CustomCursorPagination(CursorPagination):
+  cursor_query_param = 'imlec'
+  page_size =10
+  ordering='id'
   

@@ -1,5 +1,6 @@
 asgiref==3.6.0
 Django==4.1.4
+django-filter==22.1
 djangorestframework==3.14.0
 Faker==15.3.4
 python-dateutil==2.8.2
