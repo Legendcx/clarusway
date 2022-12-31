@@ -136,8 +136,8 @@
 # main()
 
 
-# def myprint(word, n, delim):
-#     ans = [word] * n 
-#     return delim.join(ans)
+def myprint(word, n, delim):
+    ans = [word] * n 
+    return delim.join(ans)
   
-# print(myprint('tina', 3, '!'))
+print(myprint('Burhan', 3, '!'))
