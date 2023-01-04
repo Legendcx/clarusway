@@ -2,7 +2,7 @@ from .base import *
 
 
 DATABASES = {
-  "default": {
+    "default": {
     "ENGINE": "django.db.backends.postgresql_psycopg2",
     "NAME": config("SQL_DATABASE"),
     "USER": config("SQL_USER"),
