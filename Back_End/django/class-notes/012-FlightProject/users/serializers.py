@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from rest_framework.validators import UniqueValidator
 from django.contrib.auth.password_validation import validate_password
 
+# from dj_rest_auth.serializers import TokenSerializer
 from dj_rest_auth.serializers import TokenSerializer
 
 class RegisterSerializer(serializers.ModelSerializer):
@@ -17,6 +18,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         required = True,
         validators = [validate_password],
         style = {"input_type" : "password"}
+        # giriş yaparken gizliyor parolamizi
     )
     password2 = serializers.CharField(
         write_only = True,
