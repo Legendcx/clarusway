@@ -1,0 +1,24 @@
+
+
+PROJECT PLAN
+
+- Flight
+- Revervation
+- Passenger
+
+ # Flight
+    -Client_users
+      - views upcoming flights
+
+    -Staff members
+      - views all flight with rezervations
+      - CRUD flight  
+
+
+# RESERVATION 
+
+  - Client_users
+    - CRUD Reservtations (their own reservations)
+
+  - Staff members
+    CRUD RESERVATION (all reservations)
