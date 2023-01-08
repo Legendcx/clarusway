@@ -140,4 +140,4 @@ def myprint(word, n, delim):
     ans = [word] * n 
     return delim.join(ans)
   
-print(myprint('Burhan', 4, '#'))
+print(myprint('Burhan', 6, '#'))
