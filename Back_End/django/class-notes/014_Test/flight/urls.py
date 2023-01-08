@@ -3,7 +3,7 @@ from .views import FlightView, ReservationView
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register("flights", FlightView)
+router.register("flights", FlightView, basename='flights')
 router.register("reservations", ReservationView)
 
 urlpatterns = [
