@@ -177,7 +177,7 @@ def kwd_only_arg(*, arg):
   print(arg)
  
 echo_word = (lambda x,y: x * y)
-print(echo_word("hello", 4))
+print(echo_word("hello", 5))
       
       
 
